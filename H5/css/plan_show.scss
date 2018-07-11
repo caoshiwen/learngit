@@ -1,0 +1,25 @@
+@import "common";
+
+
+.sec-orders{
+
+}
+.art-order-item {
+    background-image: url("../img/plan_item_bg.png");
+    background-repeat: no-repeat;
+    -moz-background-size: auto (692rem / 75);
+         background-size: auto (692rem / 75);
+    background-position: top left;
+    /* overflow: hidden;*/
+    .line {
+        height: 1px;
+        background-color: #f5f5f5;
+    }
+    .line2 {
+        height: 1px;
+        background-color: #e5e5e5;
+    }
+}
+.common-loading {
+    @include commonLoading(1);
+}

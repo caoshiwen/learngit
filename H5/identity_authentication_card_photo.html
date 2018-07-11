@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray { 
+            background: none;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+/*        .bank,.personal img {
+            position: absolute;
+            top:0;
+            left:;
+        }*/
+    </style>
+</head>
+<!-- identity_authentication -->
+<body class="my-card-for-more-plan">
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">银行认证</h2>
+    </header>
+    <h2 class="fz26 tac pt120 lh26">拍摄/上传您的银行卡正面及个人照</h2>
+    <section class="">
+        <a class="bank btn-id db w750 h260 tac mt70 ofh pr" href="javascript:void(0);">
+            <img class="w420 center-by-absolute" src="img/identity_authentication_bank.png">
+        </a>
+        <a class="personal btn-id mt90 db w750 h260 tac ofh pr" href="javascript:void(0);">
+            <img class="w420 center-by-absolute"  src="img/identity_authentication_personal.png">
+        </a>
+    </section>
+    <section class="sec-go-next mt190 pb80">
+        <a class="btn-sure-add gray br10 blue-bg-button ml30 mt40" href="identity_authentication_card_info.html">下一步</a>
+    </section>
+    <section class="alert-btns dn">
+        <form action="#">
+            <div class="alert-btns-bg pa t0 l0 w100p h100p bgc000000 op30 zi10"></div>
+            <div class="w520 h202 center-by-absolute zi10 br10 ofh">
+                <label class="btn-op-camera db w100p bgcffffff h100 lh100 fz28 c333333 tac pr" for="bank-camera">拍摄/上传</label>
+                <input id="bank-camera" class="pa l0 r0 zi10 dn w100p h100p" type="file" capture="camera" accept="image/*"/>
+                <input id="personal-camera" class="pa l0 r0 zi10 dn w100p h100p" type="file" capture="camera" accept="image/*"/>
+                <div  class="h2 w100p bgce9e9e9"></div>
+                <label class="btn-op-folder db w100p bgcffffff h100 lh100 fz28 c333333 tac pr" for="bank-folder">从相册选择照片</label>
+                <input id="bank-folder" class="pa l0 t0 zi10 dn w100p h100p" type="file" accept="img/*">
+                <input id="personal-folder" class="pa l0 t0 zi10 dn w100p h100p" type="file" accept="img/*">
+            </div>
+        </form>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/identity_authentication_card_photo.js"></script>
+<script src="js/change_font_size.js"></script>
+</html>

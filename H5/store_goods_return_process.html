@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px;">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" type="text/css" href="dist/mobileSelect.css">
+    <style>
+        .gray,.gray *{
+            background-color: #888;
+            background-image: none!important;
+            pointer-events: none;
+        }
+        .width-transition {
+            -webkit-transition-duration: 1200ms;
+            -o-transition-duration: 1200ms;
+            transition-duration: 1200ms;
+            -webkit-transition-property: width;
+            -o-transition-property: width;
+            transition-property: width;
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body class="fl pt140 bgcf5f5f5 pb180">
+    <header class="pf zi10 t-40 common-header bb1scccccc bgcffffff" style="background: none; background-color: #ffffff;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <h2 class="title" style="color: #333333;">申请退货</h2>
+    </header>
+    <section class="pb42 bgcffffff">
+        <div class="tac pr h202">
+            <div class="pa t0 w750 bgcffffff">
+                <div class="fz20 lh20 mt56 c888888 clearfix">
+                    <p class="fl ml88">填写申请</p>
+                    <p class="fl ml64">商家审核</p>
+                    <p class="fl ml64">寄回商品</p>
+                    <p class="fl ml64">完成退款</p>
+                </div>
+                <div class="pa l100 zi2 h72 lh66 mt24">
+                    <img class="w552" src="img/store_goods_return_process_not_bright.png">
+                </div>
+            </div>
+            <div class="process-show w0 width-transition pa t0 bgcffffff ofh h200">
+                <div class="fz20 w750 lh20 mt56 c888888 clearfix">
+                    <p class="fl ml88 c0086ff">填写申请</p>
+                    <p class="fl ml64 c0086ff">商家审核</p>
+                    <p class="fl ml64 c0086ff">寄回商品</p>
+                    <p class="fl ml64 c0086ff">完成退款</p>
+                </div>
+                <div class="w110 pa l100 zi3 h72 lh66 mt24">
+                    <img class="process-show-img w552" src="img/store_goods_return_process_bright.png">
+                </div>
+            </div>
+        </div>
+        <div class="process-word-1 dn">
+            <p class="tac fz22 lh22">填写退货申请</p>
+            <p class="tac fz22 lh22 mt14">提交申请由商家审核</p>
+        </div>
+        <div class="process-word-2-1 dn">
+            <p class="tac fz22 lh22">申请已提交，等待商家处理</p>
+            <p class="tac fz22 lh22 mt14"><span class="cfa491d"><span class="day">0</span>天<span class="hour">00</span>时<span class="minute">00</span>分</span>内将审核完成</p>
+        </div>
+<!--         <div class="process-word-2-2 dn">
+            <p class="tac fz22 lh22">商家同意退货</p>
+            <p class="tac fz22 lh22 mt14">等待退款到您的账户</p>
+        </div> -->
+<!--         <div class="process-word-2-3 dn">
+            <p class="tac fz22 lh22">商家未处理，默认同意</p>
+            <p class="tac fz22 lh22 mt14">等待退款到您的账户</p>
+        </div> -->
+        <div class="process-word-2-4 dn">
+            <p class="tac fz22 lh22">退货失败：商家拒绝了您的退货请求</p>
+            <p class="tac fz22 lh22 mt14 cfa491d">需重新申请</p>
+        </div>
+
+        <div class="process-word-3-1 dn">
+            <p class="tac fz22 lh22">请退回并填写物流运单号</p>
+            <p class="tac fz22 lh22 mt14"><span class="cfa491d"><span class="day">0</span>天<span class="hour">00</span>时<span class="minute">00</span>分</span>内将商品退回</p>
+        </div>
+        <div class="process-word-3-2 dn">
+            <p class="tac fz22 lh22">等待商家收货验货</p>
+            <p class="tac fz22 lh22 mt14"><span class="cfa491d"><span class="day">0</span>天<span class="hour">00</span>时<span class="minute">00</span>分</span></p>
+        </div>
+        <div class="process-word-3-3-1 dn">
+            <p class="tac fz22 lh22">退货失败：物流运单号超时未填写</p>
+            <p class="tac fz22 lh22 mt14 cfa491d">需重新申请</p>
+        </div>
+        <div class="process-word-3-3-2 dn">
+            <p class="tac fz22 lh22">退货失败：商家验货后拒绝退货</p>
+            <p class="tac fz22 lh22 mt14">原地址寄回</p>
+        </div>
+        <div class="process-word-3-3-3 dn">
+            <p class="tac fz22 lh22">退货失败：商家未收到或未处理</p>
+            <p class="tac fz22 lh22 mt14">请联系物流及商家</p>
+        </div>
+        <div class="process-word-3-3-4 dn">
+            <p class="tac fz22 lh22">商家验货成功，同意退款</p>
+            <p class="tac fz22 lh22 mt14">等待退款</p>
+        </div>
+        <div class="process-word-4 dn">
+            <p class="tac fz22 lh22">退款完成</p>
+            <p class="tac fz22 lh22 mt14">您的退款已经退回到您的账户</p>
+        </div>
+    </section>
+    <section class="process-word-2-4 process-word-3-3-2 dn">
+        <div class="h20 bgcf5f5f5"></div>
+        <li class="fz24 lh24 pt44 pb44 pl30 bgcffffff" style="list-style: disc;">商家拒绝原因：<span class="refuse-cause"></span></li>
+    </section>
+
+    <div class="process-word-3-1 dn">
+        <section class="h20 bgcf5f5f5"></section>
+        <section class="bgcffffff pl30 pr30">
+            <div class="pt42 pb42 fz28 lh28 clearfix  show-return-courier">
+                <span class="fl">快递公司</span>
+                <div class="fr">
+                    <span class="return-courier">其他</span>
+                    <img class="w12 ml30" src="img/payment_code_bigger.png">
+                </div>
+            </div>
+            <div class="h1px bgce5e5e5"></div>
+            <div class="pt34 pb34 fz28 lh28 clearfix">
+                <span class="fl lh44">快递单号填写</span>
+                <input class="ipt-need-check fl w460 ml44 ipt-no-outline bn pt0 pb0" type="tel" placeholder="请输入运单号" maxlength="20">
+            </div>
+        </section>
+    </div>
+    <div class="process-word-3-2 dn">
+        <section class="h20 bgcf5f5f5"></section>
+        <section class="bgcffffff pt44 pb44 pl30 clearfix">
+            <img class="w48 fl mt16" src="img/store_goods_return_process_logistics_icon.png " alt="">
+            <div class="w570 fl pl30">
+                <p class="fz30 lh30">退货物流：<span class="logistics-name"></span></p>
+                <p class="fz24 lh24 c666666 mt24 logistics-in-time" ></p>
+            </div>
+        </section>
+    </div>
+    <section class="h20 bgcf5f5f5"></section>
+    <section class="pl30 pr30 pt40 pb40 bgcffffff">
+        <p class="fz28">退款信息</p>
+        <article class="h200 pt30 pb30 pl30 pr30 lh90 bgcf5f5f5 mt30">
+            <div class="w140 h140 fl">
+                <img class="object-fit-cover vat" src="img/store_goods_forexample.png">
+            </div>
+            <p class="mult-line-ellipsis-2 fz24 lh30 fl w460 ml20 h56">夏季尖领宽松垂感雪纺连衣裙夏季尖领宽松垂感雪连衣裙雪连衣裙夏季尖领宽松垂感雪纺连衣裙夏季尖领宽松垂感雪连衣裙雪连衣裙</p>
+            <p class="c666666 fz24 lh24 mt24 fl ml20">尺码:S ; 颜色:上衣</p>
+        </article>
+        <article class="c666666 fz22 lh22">
+            <p class="mt22">退款原因：<span>其他</span></p>
+            <p class="mt22">退款金额：<span>￥1212.23</span></p>
+            <p class="mt22">申请时间：<span>2018-12-23 13:12</span></p>
+        </article>
+    </section>
+    <a class="send-btn process-word-3-1 dn gray" href="store_goods_return_process.html">
+        <section class="h100 lh100 w750 blue-bg-button-no-radius pf b0">
+            提交
+        </section>
+    </a>
+        <a class="send-btn process-word-2-4 process-word-3-3-1 dn" href="store_goods_return.html">
+        <section class="send-btn h100 lh100 w750 blue-bg-button-no-radius pf b0">
+            重新申请
+        </section>
+    </a>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/util.js"></script>
+<script src="dist/mobileSelect.min.js"></script>
+<script src="js/store_goods_return_process.js"></script>
+</html>

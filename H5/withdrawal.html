@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray { 
+            background: none;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+
+    </style> 
+</head>
+<body class="my-card-for-more-plan">
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">提现</h2>
+    </header>
+    <section class="w750 h20 bgcf5f5f5"></section>
+    <section class="bank-select sec-out-card pl30  h130 lh130 fz26">
+        <img class="bank-logo w50" src="img/bank_logo.png">
+        <span class="bank-name fz26 ml20">中国农业银行 (7078)</span>
+        <img class="w12 fr mt52 mr30" src="img/biggerfcfcfc.png">
+    </section>
+    <section class="w750 h20 bgcf5f5f5"></section>
+    <section class="pl30 pt50">
+        <p class="fz28 lh28 c666666">提现金额</p>
+        <div class="h150 tab pr">
+            <span class="fz60 pa b12 ml-8">￥</span>
+            <div class="ipt-wrap h80 w580 ofh pa b18 l68">
+                <input class="price need-check-ipt ipt-no-outline bn fz80 w600 pa t-16" type="tel" value="" onkeyup="onlyNumber(this)">
+            </div>
+        </div>
+        <div class="ml50 w670 h1px bgcf5f5f5"></div>
+        <p class="h90 fz28 lh90 c888888">可用余额 223.39元</p>
+    </section>
+    <section class="w750 h20 bgcf5f5f5"></section>
+    <section class="sec-go-next mt30">
+        <a class="btn-sure-add gray br10 blue-bg-button ml30 mt72" href="card_mag_card_detial.html">确认提现</a>
+    </section>
+
+
+    <section class="sec-choose-card">
+        <article class="art-bg"></article>
+        <article class="art-card-list">
+            <h2>选择出款账户</h2>
+            <ul>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo_forexample_nonghang.png">
+                    <p class="bank-name">中国农业银行 (7078)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (1234)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (5678)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (9107)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+            </ul>
+        </article>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/withdrawal.js"></script>
+<script src="js/change_font_size.js"></script>
+</html>

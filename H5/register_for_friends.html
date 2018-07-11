@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray { 
+            background: none!important;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+         body {
+            background-image: url("img/register_for_friends_bg.png");
+            -webkit-background-size: 100%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-y: -0.533333333rem;
+            -ms-background-position-y: -0.533333333rem;
+            -ms-background-position-x: left;
+            background-position-x: left;
+         }
+         .btn-register {
+            background-image: url("img/blue_for_button_bg.png");
+            -webkit-background-size: calc(690rem / 75);
+            background-size: calc(318rem / 75) calc(80rem / 75);
+            background-repeat: no-repeat;
+            background-position: center center;
+         }
+
+    </style> 
+</head>
+<!-- register_for_friends -->
+<body class="my-card-for-more-plan">
+    <header class="common-header" style="background: none;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">帮他人注册</h2>
+    </header>
+    <section class="mt160 h400 pr">
+        <div class="h400 w580 center-by-absolute bgcffffff br6">
+            <form action="#" method="post">
+                <label for="phone" class="db w460 h80 bgcf5f5f5 br40 lh80 fz26 mt70 ml60">
+                    <img class="w28 fl mt20 ml30" src="img/register_for_friends_phone.png">
+                    <input class="ipt-phone need-check-ipt ml22 fz26 ipt-no-outline bn bgn w340" id="phone" name="phone" type="tel" placeholder="手机号" maxlength="11">
+                </label>
+                <label for="pwd" class="db w460 h80 bgcf5f5f5 br40 lh80 fz26 mt60 ml60">
+                    <img  class="w28 fl mt24 ml30" src="img/register_for_friends_pwd.png">
+                    <input class="ipt-pwd need-check-ipt ml22 fz26 ipt-no-outline bn bgn w340" id="pwd" name="pwd" type="password" placeholder="密码"  maxlength="18" minlength="6">
+                </label>
+                <input class="gray btn-register pa t360 l130 w318 h80 ipt-no-outline bn cffffff tac fz34 br40 ofh" type="submit" value="注册">
+            </form>
+            <div class="h200 w580 pa b0 l0 bgcffffff br6 bs008aeaeae60 zi-1"></div>
+            <div class="h200 w580 pa b20 l0 bgcffffff br6 zi-1"></div>
+        </div>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/register_for_friends.js"></script>
+<script src="js/change_font_size.js"></script>
+</html>

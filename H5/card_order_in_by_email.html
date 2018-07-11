@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray { 
+            background: none;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+
+    </style>
+</head>
+<body class="fl bgcffffff pt140">
+    <header class="pf zi10 t-40 common-header bb1scccccc bgcffffff" style="background: none; background-color: #ffffff;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <h2 class="title" style="color: #333333;">邮箱导入</h2>
+    </header>
+    <section class="w750 h20 bgcf5f5f5"></section>
+    <section class="pl30">
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >邮箱帐号</span>
+            <input class="need-check-ipt email-ipt w400 ipt-no-outline bn" type="email" placeholder="请输入信用卡账单邮箱" maxlength="50">
+        </article>
+        <article class="w720 h2 bgcf5f5f5"></article>
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >邮箱密码</span>
+            <input class="need-check-ipt email-pwd-ipt w400 ipt-no-outline bn" type="password" placeholder="请输入邮箱密码" maxlength="20">
+        </article>
+    </section>
+    <section class="w750 h20 bgcf5f5f5"></section>
+
+    <section class="sec-go-next pt30 pb80">
+        <div class="bg-white lh36 h36 pl30 fz28 c888888">
+            <img class="h36 fl not-agree" id="agree-with-us" src="img/agree_with_us_gray.png">
+            <span class="ml24 fl">我已阅读并同意<a class="ac0086ff" href="#">《用户服务协议》</a></span>
+        </div>
+        <a class="btn-sure gray br10 blue-bg-button ml30 mt40" href="waiting.html">提交</a>
+        <p class="fz24 c888888 mt30 tac">*请授权有信用卡账单的邮箱</p>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/card_order_in_by_email.js"></script>
+</html>

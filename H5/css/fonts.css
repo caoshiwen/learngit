@@ -1,0 +1,20 @@
+@font-face {
+    font-family: PingFang-Regular;
+    src: url("../fonts/PingFang_Regular.ttf");
+}
+@font-face {
+    font-family: PingFang-Medium;
+    src: url("../fonts/PingFang_Medium.ttf");
+}
+
+ * {
+    font-family: PingFang-Medium;
+    /*font-weight: 700;*/
+ }
+
+
+ .card.goods-contents .goods-price{
+    font-family: PingFang-Medium;
+ }
+
+ 

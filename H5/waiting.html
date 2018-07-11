@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" href="css/waiting_card_pay.css">
+</head>
+<body>
+    <section class="sec-loading">
+        
+        <div class="common-loading">
+            <!-- <img src="img/loading.png"> -->
+           <ul class="">
+               <li class="one"></li>
+               <li class="two"></li>
+               <li class="three"></li>
+               <li class="four"></li>
+               <li class="five"></li>
+               <li class="six"></li>
+               <li class="seven"></li>
+               <li class="eight"></li>
+           </ul>
+        </div>
+        <p class="loading-word">loading . . .</p>
+    </section>
+    <section class="sec-buttons">
+        <a class="waiting-continue">
+            继续等待
+        </a>
+        <a class="check-order" href="billing_records.html">
+            查看订单
+        </a>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script>
+  $(function(){
+    setTimeout(function(){
+      window.location.href = "pay_succeed.html";
+    },3000);
+  })
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px;">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray{
+            background-color: #888;
+            background-image: none!important;
+            pointer-events: none;
+        }
+        .order-type-wrap {
+            -webkit-transition-duration: 300ms;
+            -o-transition-duration: 300ms;
+            transition-duration: 300ms;
+            -webkit-transition-property: margin-left;
+            -o-transition-property: margin-left;
+            transition-property: margin-left;
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body class="fl bgcffffff pt140">
+    <header class="pf zi10 t-40 common-header bb1scccccc bgcffffff" style="background: none; background-color: #ffffff;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <h2 class="title" style="color: #333333;">获取账单</h2>
+    </header>
+    <section class="pt80 pl40 pr40">
+        <p class="fz40 lh40 fw700">选择导入方式获取账单</p>
+        <a class="ac333333" href="card_order_in_by_net_silver.html">
+            <div class="pt30 pl30 pr30 pb30 lh28 vat clearfix mt50 bs-0-0-6-0-dddddd br4">
+                <img class="h80 w80 fl" src="img/card_order_in_by_net_silver_icon.png">
+                <p class="fz28 fl pt26 ml40">网银导入获取</p>
+                <img class="h28 fr mt26" src="img/biggerfcfcfc.png">
+            </div>
+        </a>
+        <a class="ac333333" href="card_order_in_by_email.html">
+            <div class="pt30 pl30 pr30 pb30 lh28 vat clearfix mt40 bs-0-0-6-0-dddddd br4">
+                <img class="h80 w80 fl" src="img/card_order_in_by_email_icon.png">
+                <p class="fz28 fl pt26 ml40">邮箱导入获取</p>
+                <img class="h28 fr mt26" src="img/biggerfcfcfc.png">
+            </div>
+        </a>
+        <a class="ac333333" href="manual_bill.html">
+            <div class="pt30 pl30 pr30 pb30 lh28 vat clearfix mt40 bs-0-0-6-0-dddddd br4">
+                <img class="h80 w80 fl" src="img/card_order_in_by_hands_icon.png">
+                <p class="fz28 fl pt26 ml40">手动导入获取</p>
+                <img class="h28 fr mt26" src="img/biggerfcfcfc.png">
+            </div>
+        </a>
+
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/util.js"></script>
+<script src="js/card_order_in_choose_way.js"></script>
+</html>

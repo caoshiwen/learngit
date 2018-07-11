@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" href="css/pay_immed.css">
+    <style>
+        .channel-radio-logo img{
+            display: none;
+            margin-top: -2px;
+            margin-left: -2px;
+        }
+        .active .channel-radio-logo img{
+            display: block;
+        }
+
+        .btn-next.gray { 
+            background: none;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+         .btn-next {
+
+         }
+    </style>
+</head>
+<body>
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">快捷收款</h2>
+        <!-- <a class="add-card" href="#"><img src="img/add.png"></a> -->
+    </header>
+    <section class="sec-my-card-list">
+        <article class="art-card">
+            <div class="bank-logo">
+                <img src="img/bank_logo.png">
+            </div>
+
+            <div class="card-info">
+                <p class="bank-name">中国建设银行</p>
+                <p class="card-type">储蓄卡</p>
+                <p class="card-id"><span class="star">**** **** **** </span><span>7078</span></p>
+            </div>
+
+            <!-- <img class="problem active" src="img/card_has_problem.png"> -->
+        </article>
+    </section>
+
+    <section class="sec-pay-number">
+        <article class="art-pay-number">
+            <span class="pay-number-title">收款金额</span>
+            <div class="pay-number-show">
+                <span class="chinese-d">￥</span>
+                <input class="ipt-pay-number" type="tel" value="123" onkeyup="onlyNumber(this)">
+            </div>
+        </article>
+    </section>
+    <section class="sec-show-bank">
+        <a href="javascript:void(0);"><article class="art-show-bank">
+            <p>选择出款账户</p>
+            <img src="img/biggerfcfcfc.png">
+        </article> </a>              
+    </section>
+    <section class=" w750 pt40 pl30 pr30 pb40 ">
+        <p class="fz24 lh24">*请选择通道和了解支持的银行、限制额度、工作时间</p>
+        <article class="channel-radio active w690 h130 mt30 lh130 pr bs008aeaeae60 fz28">
+            <div class="channel-radio-logo  w36 h36 pa t46 l40 br50p b2s0086ff">
+                <img class="w36 h36" src="img/agree_with_us.png">
+            </div>
+            <img class="w112 ml116" src="img/quick_payment_unionpay.png">
+            <span class="fz28 ml20">快捷1</span>
+            <img class="img-att h30 ml284" src="img/get_attention.png">
+        </article>
+        <article class="channel-radio w690 h130 mt30 lh130 pr bs008aeaeae60 fz28">
+            <div class="channel-radio-logo  w36 h36 pa t46 l40 br50p b2s0086ff">
+                <img class="w36 h36" src="img/agree_with_us.png">
+            </div>
+            <img class="w112 ml116" src="img/quick_payment_unionpay.png">
+            <span class=" fz28 ml20">快捷1</span>
+            <img class="img-att  h30 ml284" src="img/get_attention.png">
+        </article>
+        <article class="channel-radio w690 h130 mt30 lh130 pr bs008aeaeae60 fz28">
+            <div class="channel-radio-logo  w36 h36 pa t46 l40 br50p b2s0086ff">
+                <img class="w36 h36" src="img/agree_with_us.png">
+            </div>
+            <img class="w112 ml116" src="img/quick_payment_unionpay.png">
+            <span class="fz28 ml20">快捷1</span>
+            <img class="img-att  h30 ml284" src="img/get_attention.png">
+        </article>
+    </section>
+    <section class="h20 w750 bgcf5f5f5"></section>
+    <section class="sec-go-next">
+        <a class="btn-next gray br10" href="quick_payment_china_unionpay.html">下一步</a>
+    </section>
+
+    <section class="sec-tip dn pf t0 l0 w750 h100p zi10">
+        <article class="pa t0 l0 bgc000000 w750 h100p op40"></article>
+        <article class="center-by-absolute w550 h690 br4 bgcffffff ofh ">
+            <h2 class="lh118 tac fz40">温馨提示</h2>
+            <ul class="h212">
+                <li class="fz26 lh26 w50p pl30 mb30 fl "><span class="w50p dib c888888">早上</span><span class=" lh26 w50p dib">8:30</span></li>
+                <li class="fz26 lh26 w50p pl30 mb30 fl "><span class="w50p dib c888888">晚上</span><span class=" lh26 w50p dib">21:10</span></li>
+
+                <li class="fz26 lh26 w50p pl30 mb30 fl "><span class="w50p dib c888888">实时</span><span class=" lh26 w50p dib">DO</span></li>
+                <li class="fz26 lh26 w50p pl30 mb30 fl "><span class="w50p dib c888888">手续费</span><span class=" lh26 w50p dib">0.42</span></li>
+                <li class="fz26 lh26 pl30 mb30 fl w100p"><span class="w25p dib c888888">额度</span><span class="lh26 w75p dib ml-8">100元—20000元</span></li>
+            </ul>
+            <p class="fz26 lh26 c888888 pl30">银行列表</p>
+            <ul class="mt30 h192 ofs">
+                <li class="pl30 mb22 fz28 lh40 w50p fl"><img class="w40" src="img/bank_logo.png"><span class="ml22">建设银行</span></li>
+                <li class="pl30 mb22 fz28 lh40 w50p fl"><img class="w40" src="img/bank_logo.png"><span class="ml22">建设银行</span></li><li class="pl30 mb22 fz28 lh40 w50p fl"><img class="w40" src="img/bank_logo.png"><span class="ml22">建设银行</span></li><li class="pl30 mb22 fz28 lh40 w50p fl"><img class="w40" src="img/bank_logo.png"><span class="ml22">建设银行</span></li><li class="pl30 mb22 fz28 lh40 w50p fl"><img class="w40" src="img/bank_logo.png"><span class="ml22">建设银行</span></li><li class="pl30 mb22 fz28 lh40 w50p fl"><img class="w40" src="img/bank_logo.png"><span class="ml22">建设银行</span></li><li class="pl30 mb22 fz28 lh40 w50p fl"><img class="w40" src="img/bank_logo.png"><span class="ml22">建设银行</span></li>
+            </ul>
+            <a class="btn-i-know pa b0 l0 tac lh90 fz30 ac0086ff db w100p bt1se5e5e5" href="javascript:void(0);">我知道了</a>
+        </article>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/quick_payment.js"></script>
+<script src="js/change_font_size.js"></script>
+
+</html>

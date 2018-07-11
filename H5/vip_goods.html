@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" href="dist/swipeslider.css">
+
+    <style>
+        header.common-header {
+            background: none;
+        }
+        .goods-img {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .sw-next-prev {
+            display: none;
+        }
+        .swipslider {
+            /*padding: 0!important;*/
+        }
+        .swipslider .sw-bullet {
+            bottom:calc(56rem / 75);
+            font-size: calc(12rem / 75);
+            line-height: calc(12rem / 75);
+        }
+        .swipslider .sw-bullet li {
+            width:calc(12rem / 75);
+            height: calc(12rem / 75);
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .swipslider .sw-bullet li:not(:last-child) {
+            margin-right: calc(20rem / 75);
+        }
+        .swipslider .sw-bullet li.active {
+            background-color: #ffd018;
+        }
+        .content-block.active {
+            color: #ffd018;
+        }
+        .content-block.active .line {
+            display: block;
+        }
+        .help-btns.active {
+            display: block;
+        }
+
+        .type li.active {
+            color:#ffffff;
+            background-color: #ffd018;
+        }
+
+        .gray { 
+            color:#c3c3c3 !important;
+            pointer-events: none;
+         }
+    </style>
+</head>
+<body class="fl">
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();" style="bottom: calc(26rem / 75);"><img src="img/smller_shadow.png" style="height: calc(48rem / 75);"></a>
+        <!-- <h2 class="title">会员专区</h2> -->
+    </header>
+    <section class="h634 pr">
+        <figure id="full_feature" class="swipslider pa t-140 l0 zi1 w750 h774">
+            <ul class="sw-slides">
+                <li class="sw-slide">
+                    <img class="goods-img" src="img/vip_goods_img_forexample.png">
+                </li>
+                <li class="sw-slide">
+                    <img class="goods-img" src="img/vip_goods_img_forexample.png">
+                </li>
+                <li class="sw-slide">
+                    <img class="goods-img" src="img/vip_goods_img_forexample.png">
+                </li>
+            </ul>
+        </figure>
+    </section>
+    <!--内容块按钮 -->
+    <section class=" bgcffffff btr20 pr zi2 h80 w100p" style="margin-top: calc(-32rem / 75);">
+        <div class="content-block w250 h80 fz26 pr lh80 tac c888888 active fl">
+            <span>商品</span>
+            <div class="line h4 w90 bgcffd018 pa l84 b0"></div>
+        </div>
+        <div class="content-block w250 h80 fz26 pr lh80 tac c888888 fl">
+            <span>评价</span>
+            <div class="line h4 w90 bgcffd018 pa l84 b0 dn"></div>
+        </div>
+        <div class="content-block w250 h80 fz26 pr lh80 tac c888888 fl">
+            <span>详情</span>
+            <div class="line h4 w90 bgcffd018 pa l84 b0 dn"></div>
+        </div>
+    </section>
+
+    <!--名称及价格-->
+    <section class="h1px bgce5e5e5"></section>
+    <section class="pl30 pb50 pr">
+        <div class="toe w690 fz30 lh40 h74 ofh mt40 mult-line-ellipsis-2">浴室柜洗脸台盆柜组合洗手池pvc卫浴卫生间挂墙式洗漱台现代简约浴室柜洗脸台盆柜组合洗手池pvc卫浴卫生间挂墙式洗漱台现代简约</div>
+        <div class="cfa491d fz42 mt20 ml-4 lh42"><span class="fz30">￥</span>2188.80</div>
+        <div class="share w214 h60 lh60 fz26 cffffff pr20 pa r0 b30">
+            <img class="pa l0 t0 zi-1 w214 h60" src="img/vip_goods_share_icon.png">
+            <span class=" fr">分享获20元</span>
+        </div>
+    </section>
+    <section class="h20 bgcf5f5f5 w750"></section>
+    <a class="show-choose-btn ac333333" href="javascript:void(0);">
+    <section class="show-choose-show h100 w750 pl30 pr30 lh100 fz26">规格数量选择<img class="fr w14 mt40" src="img/biggerfcfcfc.png"></section>
+    </a>
+    <section class="h20 bgcf5f5f5 w750"></section>
+
+
+    <!-- 评论 -->
+    <section>
+        <article class="h80 lh80 fz24 pl30 pr30">
+            <span class="w6 h24 br3 bgcffd018 fl mt28"></span>
+            <span class="ml16">商品评论(<span>238</span>)</span>
+            <a class="acffd018 fr" href="#">全部评论</a>
+        </article>
+        <article class="h1px bgce5e5e5"></article>
+    </section>
+    <section>
+        <article class="pl30 pt32 pb28">
+            <div class="h74 lh74 w690 fz28 c666666">
+                <div class="w74 h74 ofh br50p pr fl">
+                    <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                </div>
+                <span class="ml18">习作德国酿</span>
+            </div>
+            <div class="fz28 lh32 mult-line-ellipsis-3 mt22 pr30" style="max-height:calc(94rem / 75);">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较</div>
+            <div class="fz22 c888888 mt30 lh22">2018-04-30 颜色分类：灰色;尺码M</div>
+        </article>
+        <article class="h1px bgce5e5e5"></article>
+        <article class="pl30 pt32 pb28">
+            <div class="h74 lh74 w690 fz28 c666666">
+                <div class="w74 h74 ofh br50p pr fl">
+                    <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                </div>
+                <span class="ml18">习作德国酿</span>
+            </div>
+            <div class="fz28 lh32 mult-line-ellipsis-3 mt22 pr30" style="max-height:calc(96rem / 75);">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。</div>
+            <div class="fz22 c888888 mt30 lh22">2018-04-30 颜色分类：灰色;尺码M</div>
+        </article>
+        <article class="h1px bgce5e5e5"></article>
+        <article class="pl30 pt32 pb28">
+            <div class="h74 lh74 w690 fz28 c666666">
+                <div class="w74 h74 ofh br50p pr fl">
+                    <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                </div>
+                <span class="ml18">习作德国酿</span>
+            </div>
+            <div class="fz28 lh32 mult-line-ellipsis-3 mt22 pr30" style="max-height:calc(96rem / 75);">东西蛮好的，基本没有评论里面那些毛病。</div>
+            <div class="fz22 c888888 mt30 lh22">2018-04-30 颜色分类：灰色;尺码M</div>
+        </article>
+    </section>
+    <section class="h20 bgcf5f5f5 w750"></section>
+
+
+    <!-- 商品详情 -->
+    <section>
+        <article class="h80 lh80 fz24 pl30 pr30">
+            <span class="w6 h24 br3 bgcffd018 fl mt28"></span>
+            <span class="ml16">商品详情</span>
+        </article>
+        <article class="w750 pb100">
+            <img class="w750" src="img/vip_goods_detial_pic.png">
+        </article>
+    </section>
+
+
+    <!-- 底部按钮 -->
+    <section class="pf b0 l0 h100 w750 zi10 bgcffffff bs-0-0-10-0-dddddd">
+        <article class="w430 h100 c666666 fl">
+            <div class="w214 h100 fz24 lh100 tac fl">
+                <img class="w42" src="img/vip_goods_store_icon.png">
+                <span class="ml22">商店</span>
+            </div>
+            <div class="find-help w214 h100 fz24 lh100 tac fl">
+                <img class="w44" src="img/vip_goods_find_help_icon.png">
+                <span class="ml22">咨询</span>
+            </div>
+        </article>
+        <article class="buy-now-out-btn w320 h100 lh100 fz32 cffffff bgcffd018 pr tac fl">
+            立即购买
+            <img class="w320 h100 pa t0 l0 zi-1" src="img/vip_goods_buy_btn_bg.png">
+        </article>
+    </section>
+
+    <section class="help-btns dn w240 h374 pf b110 l188 pl10 pr10 zi3">
+        <img class="pa b0 l0 w240 h374 zi-1"  src="img/vip_goods_find_help_btns_bg.png">
+        <div class="fz28 h90 lh90">
+            <div class="w82 h90 pr fl">
+                <img class="h34 center-by-absolute" src="img/vip_goods_find_help_icons_person.png">
+            </div>
+            <span>咨询客服</span>
+        </div>
+        <div class="h1px bgce5e5e5"></div>
+        <div class="fz28 h90 lh90">
+            <div class="w82 h90 pr fl">
+                <img class="h34 center-by-absolute" src="img/vip_goods_find_help_icons_listen.png">
+            </div>
+            <span>语音听听</span>
+        </div>
+        <div class="h1px bgce5e5e5"></div>
+        <div class="fz28 h90 lh90">
+            <div class="w82 h90 pr fl">
+                <img class="h34 center-by-absolute" src="img/vip_goods_find_help_icons_see.png">
+            </div>
+            <span>视频看看</span>
+        </div>
+        <div class="h1px bgce5e5e5"></div>
+        <div class="fz28 h90 lh90">
+            <div class="w82 h90 pr fl">
+                <img class="h34 center-by-absolute" src="img/vip_goods_find_help_icons_talk.png">
+            </div>
+            <span>电话聊聊</span>
+        </div>
+        <div class="h1px bgce5e5e5"></div>
+    </section>
+
+
+<!-- 选择型号 -->
+    <div class="dn type-choose w750 h100p pf zi10 b0 l0">
+        <section class="hide-choose w750 h100p pa t0 l0 zi1 bgc000000 op40"></section>
+        <section class="choose-content w750 h930 pa b0 l0 zi2 bgcffffff" style="bottom:-100%;">
+            <article class="pt40 pl30 pb20 h190 w750 pr">
+                <div class="w140 h140 fl">
+                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                </div>
+                <span class="price cfa491d fz30 lh30 pa t76 l192">￥20188.80</span>
+                <span class="all-type-show c666666 fz28 lh30 pa l198 t122">请选择</span>
+                <img class="hide-choose w26 h26 pa t40 r30" src="img/vip_goods_cancel_choose.png">
+            </article>
+            <article class="h640 ofs pt40 pb40">
+                <div class="type pb60">
+                    <p class="type-show fz22 lh22 c888888 pl30" my-name="尺码">尺码</p>
+                    <ul class="clearfix ">
+                        <li class=" bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">50cm</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">60cm</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">70cm</li>
+                    </ul>
+                </div>
+                <div class="type pb60">
+                    <p class="type-show fz22 lh22 c888888 pl30" my-name="颜色">颜色</p>
+                    <ul class="clearfix ">
+                        <li class=" bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">棕色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">黑色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+                        <li class="bgcf0f0f0 br20 fz22 pl26 pr26 h70 lh70 ml30 fl tac mt30">白色</li>
+
+                    </ul>
+                </div>
+                <div class="number">
+                    <p class="fz22 lh22 c888888 pl30 mb30">数量</p>
+                    <div class="pl30 clearfix fz56">
+                        <div class="number-minus gray w60 h60 bgcf0f0f0 tac fz56 fl lh54 c888888">-</div>
+                        <div class="number-show w80 h60 tac lh60 fz28 fl" my-value="1">1</div>
+                        <div class="number-add w60 h60 bgcf0f0f0 tac fz56 fl lh54 c888888">+</div>
+                    </div>
+                </div>
+            </article>
+            <article class="buy-now fz32 cffffff h100 w750 pa b0 l0 tac lh100" style="background-image: url('img/vip_goods_btn_bg.png');background-size: 100% 100%;background-position: top left;background-repeat: no-repeat;" >立即购买</article>
+            <article class="choose-sure fz32 cffffff h100 w750 pa b0 l0 tac lh100 dn" style="background-image: url('img/vip_goods_btn_bg.png');background-size: 100% 100%;background-position: top left;background-repeat: no-repeat;" >确认选择</article>
+        </section>
+    </div>
+
+    <!-- 分享提示 -->
+    <section class="share-tip pf t0 l0 w100p h100p zi11 dn">
+        <article class="bg w750 h100p bgc000000 op40 pa zi-1 t0 l0"></article>
+        <div class="center-by-absolute w560 h560 br10 ofh bgcffffff pl40 pr40 pb40 pt60">
+            <div class="fz30 lh30 tac"><img class="w30 mr16" src="img/vip_goods_share_shot_line.png">邀请好友 分享赚钱<img class="w30 ml16" src="img/vip_goods_share_shot_line.png"></div>
+            <div class="h352 w560 pt82 pl48">
+                <img class="w26 fl" src="img/vip_goods_share_step.png">
+                <div class="fl fz28 lh28 pt2 pl40">
+                    <p class="">分享给我的好友</p>
+                    <p class="mt54">好友通过分享购买该商品</p>
+                    <p class="mt54">即可马上获益90元</p>
+                </div>
+            </div>
+            <div class="show-share-block-btn fz28 lh28 pt30 pb30 cffffff tac bgc0086ff br10">生成图片</div>
+        </div>
+    </section>
+    <!-- 分享图片生成 -->
+    <section class="share-block pf t0 l0 w100p h100p zi12 dn">
+        <article class="bg w750 h100p bgc000000 op40 pa zi-1 t0 l0"></article>
+        <div class="center-by-absolute w560 h918">
+            <article class="bgcffffff w560 h798 br20 ofh">
+                <div class="w100p h636">
+                    <div class="need-show br20 ofh pr">
+                        <!-- <img class="show-img dn w100p h100p pa t0 l0 zi11" src="#"> -->
+                        <div class="w100p h420">
+                            <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                        </div>
+                        <div class="h206 w100p pl40 pr40 pt24 bgcffffff">
+                            <div class="fl h60 w306">
+                                <div class="share-block-goods-name w306 h60 lh34 fz24 ">
+                                    浴室柜洗脸台盆柜组合洗手池卫浴卫生间挂墙式洗洗手池卫浴卫生间挂墙式洗漱墙
+                                </div>
+                                <p class="ml-4 fz24 cfa491d lh24 mt36">￥2188.80</p>
+                            </div>
+                            <img class="w120 h120 fr" src="img/2dcode_forexample.png">
+                            
+                        </div>
+                    </div>
+                    <div class="h1px bgce5e5e5 w480 ml40"></div>
+                    <div class="h160 w100p pl40 pr40 pt30">
+                        <a class="save-img"></a>
+                        <a class="save-img-btn ac333333" href="javascript:void(0);">
+                            <div class="w160 fz20 c666666 tac  fl">
+                                <img class="w66 h66 mb12" src="img/goods_img_save_btn.png">
+                                <p>保存图片</p>
+                            </div>
+                        </a>
+                        <div class="save-img-btn w160 fz20 c666666 tac  fl">
+                            <img class="w66 h66 mb12" src="img/goods_img_share_btn.png">
+                            <p>分享图片</p>
+                        </div>
+                        <div class="btn-share-url-to-friend w160 fz20 c666666 tac  fl">
+                            <img class="w66 h66 mb12" src="img/goods_link_share_btn.png">
+                            <p>分享链接</p>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="">
+                    <img class="w100 h100 img-show object-fit-cover">
+                </div>
+                <a class="bulid-img" href="javascript:void(0);">生成图片</a> -->
+            </article>
+            <img class="bg w60 h60 mt60 ml250" src="img/goods_share_cancel_icon.png">
+        </div>
+    </section>
+
+    <section class="show-img-block pf t0 l0 zi20 w100p h100p bgc00000070 dn">
+        <img class="show-img w600 center-by-absolute" src="#">
+    </section>
+
+    <!-- <div class="zi-1"> -->
+        <section class="sec-share-made-img bgcffffff pf zi100 w100p t0" style="left:100%;">
+            <article class="h100 lh100 tac fz44">
+                <!-- <div class="br10 w44 h44 ofh dib fz44 lh44" style="padding: 0;"> -->
+                    <img class="w44 h44 br10" src="img/header_forexample.png">
+                <!-- </div> -->
+                <span class="fz28 lh44">您的朋友某某为您推荐</span>
+            </article>
+            <article class="w750 h804 ofh">
+                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+            </article>
+            <article class="h186 w100p pl54 pr54 pt26 bgcffffff">
+                <div class="fl h160 w406 pr">
+                    <div class="share-block-goods-name w412 h62 lh34 fz32 ofh">
+                        浴室柜洗脸台盆柜组合洗手池卫浴卫生间挂墙式洗洗手池卫浴卫生间挂墙式洗漱墙
+                    </div>
+                    <p class="pa b10 fz32 cfa491d lh32" style="left:calc(-4rem / 75);">￥2188.80</p>
+                </div>
+                <img class="h160 fr" src="img/2dcode_forexample.png">      
+            </article>
+            <div class="h1px bn w690 ml30 mt34" style="border-top:1px dashed #e5e5e5;"></div>
+            <article class="pb70 pl78 pt70 fz30 lh30">
+                <img class="h68" src="img/vip_goods_share_bottom_tip.png">
+            </article> 
+        </section>
+    <!-- </div> -->
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script>
+    // alert(window.$api);
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="dist/html2canvas.min.js"></script>
+<script src="dist/canvas2image.js"></script>
+<script src="dist/soshm.min.js"></script>
+<script src="js/util.js"></script>
+<script type="text/javascript" src="dist/swipeslider.js"></script>
+<script src="js/vip_goods.js"></script>
+</html>

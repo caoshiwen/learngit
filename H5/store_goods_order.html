@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px;">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray{
+            background-color: #888;
+            background-image: none!important;
+            pointer-events: none;
+        }
+        .order-type-btn.active {
+            color: #0086ff;
+        }
+        .order-type-btn.active .line{
+            display: block;
+        }
+        .order-type-wrap {
+            -webkit-transition-duration: 300ms;
+            -o-transition-duration: 300ms;
+            transition-duration: 300ms;
+            -webkit-transition-property: margin-left;
+            -o-transition-property: margin-left;
+            transition-property: margin-left;
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body class="fl bgcf5f5f5 pt140">
+    <header class="pf zi10 t-40 common-header bb1scccccc bgcffffff" style="background: none; background-color: #ffffff;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <h2 class="title" style="color: #333333;">我的订单</h2>
+    </header>
+    <section class="w750 h90 ofh pf zi10 t100 l0 bgcffffff fz28 lh28 pl36 c888888">
+        <div class="order-type-btn active fl pl24 pr24 h90 pt30 pr">
+            全部
+            <div class="line h3 w40 bgc0086ff pa b0 l30 dn"></div>
+        </div>
+        <div class="order-type-btn fl pl24 pr24 h90 pt30 pr">
+            待付款
+            <div class="line h3 w40 bgc0086ff pa b0 l46 dn"></div>
+        </div>
+        <div class="order-type-btn fl pl24 pr24 h90 pt30 pr">
+            待收货
+            <div class="line h3 w40 bgc0086ff pa b0 l46 dn"></div>
+        </div>
+        <div class="order-type-btn fl pl24 pr24 h90 pt30 pr">
+            待评价
+            <div class="line h3 w40 bgc0086ff pa b0 l46 dn"></div>
+        </div>
+        <div class="order-type-btn fl pl24 pr24 h90 pt30 pr">
+            退款/售后
+            <div class="line h3 w40 bgc0086ff pa b0 l64 dn"></div>
+        </div>
+    </section>
+    <section class="mt90 w750 bgcf5f5f5 ofh pb90">
+        <div class="order-type-wrap ofh clearfix" style="width: 500%;">
+            <div class="order-type-block w750 fl pr" style="min-height: calc(550rem / 75);min-width: 20%;">
+                <div class="pa zi0 t200 l50 w650 lh220">
+                    <img class="w650 " src="img/store_goods_order_no_one.png">
+                    <p class="fz30 tac c888888 mt40">您还没有相关订单</p>
+                </div>
+                <div class="pr zi1">
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "001">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">待付款</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_order_detial.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">付款</div>
+                            </a>
+                            <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18 cancel-order">取消订单</div>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "002">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">待发货</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">催单</div>
+                            <a href="store_goods_refund.html" class="c333333">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18">退款</div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "003">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">待收货</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">查看物流</div>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "004">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">待评价</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_evaluation.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">评价</div>
+                            </a>
+                            <!-- 注意退货按钮的显示时效 -->
+                            <a class="ac333333" href="store_goods_return.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18">退货</div>
+                            </a>
+                            <a class="c333333" href="store_goods_order_detial.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18">查看详情</div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "005">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">已退款</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_refund_process.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">退款详情</div>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "006">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">已完成</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <a class="c333333" href="store_goods_order_detial.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18">查看详情</div>
+                            </a>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "007">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">退款中</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_refund_process.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">退款详情</div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "008">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">退货中</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_return_process.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">退货详情</div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "009">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">已退货</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_return_process.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">退货详情</div>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="order-type-block w750 fl pr " style="min-height: calc(550rem / 75);min-width: 20%;">
+                <div class="pa zi0 t200 l50 w650 lh220">
+                    <img class="w650 " src="img/store_goods_order_no_one.png">
+                    <p class="fz30 tac c888888 mt40">您还没有相关订单</p>
+                </div>
+                <div class="pr zi1">
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "001">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">待付款</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_order_detial.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">付款</div>
+                            </a>
+                            <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18 cancel-order">取消订单</div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+            <div class="order-type-block w750 fl pr" style="min-height: calc(550rem / 75);min-width: 20%;">
+                <div class="pa zi0 t200 l50 w650 lh220">
+                    <img class="w650 " src="img/store_goods_order_no_one.png">
+                    <p class="fz30 tac c888888 mt40">您还没有相关订单</p>
+                </div>
+
+                <div class="pr zi1">
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "002">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">待发货</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">催单</div>
+                            <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18">退款</div>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "003">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">待收货</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">查看物流</div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+            <div class="order-type-block w750 fl pr" style="min-height: calc(550rem / 75);min-width: 20%;">
+                <div class="pa zi0 t200 l50 w650 lh220">
+                    <img class="w650 " src="img/store_goods_order_no_one.png">
+                    <p class="fz30 tac c888888 mt40">您还没有相关订单</p>
+                </div>
+                <div class="pr zi1">
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "004">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">待评价</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_evaluation.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">评价</div>
+                            </a>
+                            <!-- 注意退货按钮的显示时效 -->
+                            <a class="ac333333" href="store_goods_return.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18">退货</div>
+                            </a>
+                            <a class="c333333" href="store_goods_order_detial.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff mr18">查看详情</div>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="order-type-block w750 fl pr" style="min-height: calc(550rem / 75);min-width: 20%;">
+                <div class="pa zi0 t200 l50 w650 lh220">
+                    <img class="w650 " src="img/store_goods_order_no_one.png">
+                    <p class="fz30 tac c888888 mt40">您还没有相关订单</p>
+                </div>
+                <div class="pr zi1">
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "007">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">退款中</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_refund_process.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">退款详情</div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "005">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">已退款</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_refund_process.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">退款详情</div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "008">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">退货中</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_return_process.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">退货详情</div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="order-item  pl30 pr30 w750 mt20 bgcffffff" my-id = "009">
+                        <div class="store-name h90 fz24 lh24 pt34">
+                            <div class="br50p h40 w40 pr fl mt-8 mr18 ofh">
+                                <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                            </div>
+                            <span class="sp-store-name">鱼岛主人</span>
+                            <span class="fr c0086ff">已退货</span>
+                        </div>
+                        <div class="h1 bgce5e5e5"></div>
+                        <ul class="goods-list pb30">
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="goods-item mt30 h180 ">
+                                <div class="goods-img fl w180 h180 ofh">
+                                    <img class="object-fit-cover" src="img/vip_goods_img_forexample.png">
+                                </div>
+                                <div class="goods-info fl w510 pt14 pl24 pr h180">
+                                    <p class="c111111 fz26 lh30 mult-line-ellipsis-2" style="max-height: calc(56rem / 75);">黑色高腰短裤女夏2018新款显瘦韩版宽松学生百搭chic裤子</p>
+                                    <p class="goods-type c888888 fz22 lh26 mt20 mult-line-ellipsis-1">黑白色; 35</p>
+                                    <p class="lh26 h26 pa b16 l0 w100p pl24">
+                                        <span class="price fl fz26">￥12.02</span>
+                                        <span class="number fr c888888 fz22">x1</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix fz26 lh26"><span class="fl">商品数量</span><span class="fr">2件</span></div>
+                        <div class="clearfix fz26 lh26 mt24"><span class="fl">合计</span><span class="fr cfa491d">￥4646.80</span></div>
+                        <div class="h80 mt40 pb20">
+                            <a class="ac333333" href="store_goods_return_process.html">
+                                <div class="w140 h60 fr b1s0086ff br30 tac fz24 lh24 pt18 c0086ff">退货详情</div>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="are-you-sure pf w100p h100p pf t0 l0 dn zi12">
+        <div class="pa t0 l0 w100p h100p zi0 op30 bgc000000"></div>
+        <div class="w630 h350 bgcffffff br20 ofh center-by-absolute pt64">
+            <div class="lh80 tac">
+                <img class="h80" src="img/get_attention.png">
+            </div>
+            <p class="fz30 lh30 tac mt26">是否确认取消该订单?</p>
+            <div class="h1px bgce5e5e5 mt60"></div>
+            <a href="javascript:void(0)" class="delete-cancel ac888888 db w314 fl tac h92 lh92 fz30">取消</a>
+            <div class="h92 w2 bgce5e5e5 fl"></div>
+            <a href="javascript:void(0)" class="delete-sure ac0086ff db w314 fl tac h92 lh92 fz30">确认</a>
+        </div>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/util.js"></script>
+<script src="js/store_goods_order.js"></script>
+</html>

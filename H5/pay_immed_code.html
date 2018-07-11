@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" href="css/pay_immed.css">
+    <link rel="stylesheet" type="text/css" href="dist/mobileSelect.css">
+
+    <style>
+        .gray { 
+            background: none!important;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+        .sec-real-store-btn .right {
+           transform: rotateZ(-90deg);
+         }
+         .sec-real-store-btn.active .right {
+           transform: rotateZ(90deg);
+         }
+
+    </style>
+</head>
+<body class="bgcf5f5f5">
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">立即还款</h2>
+    </header>
+    <section class="pt30">
+<!--         <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >手机号</span>
+            <input class="need-check-ipt phone-ipt w320 ipt-no-outline bn" type="tel" placeholder="银行预留手机号" maxlength="11">
+        </article>
+        <article class="w720 h2 bgcf5f5f5"></article> -->
+        <article class="h100 w750 lh100 fz32 pr bgcffffff pl30 pr30">
+            <span class="dib w208 c666666" >验证码</span>
+            <input class="need-check-ipt code-ipt w320 ipt-no-outline bn" type="tel" maxlength="6">
+            <a class="btn-get-code fz24 tac fr ac0086ff" style="background: none!important;" href="javascript:void(0);">获取验证码</a>
+        </article>
+    </section>
+    <section class="sec-go-next">
+        <a class="go-next gray br10" href="waiting_for_reimbursement.html">下一步</a>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="dist/mobileSelect.min.js"></script>
+<script src="js/pay_immed_code.js"></script>
+<script src="js/change_font_size.js"></script>
+
+</html>

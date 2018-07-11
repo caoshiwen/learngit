@@ -1,0 +1,104 @@
+@for $i from 1 through 10 {
+    .active-#{$i} {
+        .vip-level-tab li:nth-of-type(#{$i}) {
+            box-shadow: 0 0 6px 0 #febd18;
+
+            .active-show {
+                display: block;
+            }
+        }
+        .tab-icon li:nth-of-type(#{$i}) {
+            width: (48rem / 75);
+            border-radius: (6rem / 75);
+            opacity: 1;
+            background-image: url("../img/vip_tab_icon_active_show.png");
+            background-repeat: no-repeat;
+            background-size: (48rem / 75);
+            overflow: hidden;
+            background-position: top left;
+            background-color: none;
+        }
+        .goods-content li.area:nth-of-type(#{$i}) {
+            display: block;
+        }
+    }
+}
+@mixin transition ($time,$detime, $f, $p...) {
+    -webkit-transition-timing-function: $f;
+       -moz-transition-timing-function: $f;
+            transition-timing-function: $f;
+    -webkit-transition-duration: $time;
+    -webkit-transition-duration: $detime;
+       -moz-transition-duration: $time;
+       -moz-transition-duration: $detime;
+            transition-duration: $time;
+            transition-duration: $detime;
+    -webkit-transition-property: $p;
+       -moz-transition-property: $p;
+            transition-property: $p;
+}
+.transition-icon {
+    @include transition(600ms, 0, ease, width, background, opacity);
+}
+
+
+
+
+
+
+    .goods-contents {
+        padding-left: (10rem /75);
+        // width: 1000rem;
+        height: (400rem / 75);
+        li {
+            float: left;
+            overflow: hidden;
+
+            margin-top: (30rem / 75);
+            margin-left: (30rem / 75);
+            /* box-shadow: 0 0 2px 1px #f2f2f2;*/
+            // border: 1px solid #eee;
+            -moz-border-radius: (6rem / 75);
+                 border-radius:  (6rem / 75);
+            width: (320rem / 75);
+            height: (370rem / 75);
+
+            -webkit-box-shadow: 0 0 3px 0 #ddd;
+               -moz-box-shadow: 0 0 3px 0 #ddd;
+                    box-shadow: 0 0 3px 0 #ddd;
+            // filter: progid:DXImageTransform.Microsoft.Shadow(color='#dbdbdb', Direction=0, Strength=6);/*for ie6,7,8*/ 
+        }
+        .goods-img-wrap {
+            width: (320rem / 75);
+            height: (240rem / 75);
+            overflow: hidden;
+        }
+        .goods-img {
+            width: (320rem / 75);
+            min-height: (240rem / 75);
+            min-width: (320rem / 75);
+        }
+        .goods-name {
+            overflow: hidden;
+
+            margin-top: (34rem / 75);
+            /* font-size: 4;*/
+
+            font-size: (28rem /75);
+            line-height: (28rem / 75);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .goods-price {
+            margin-top: (16rem / 75);
+
+            font-size: (22rem /75);
+            // font-weight: 700;
+            line-height: (22rem / 75);
+
+            color: #f83535;
+        }
+        .goods-info {
+            padding-left: (19rem / 75);
+        }
+    }

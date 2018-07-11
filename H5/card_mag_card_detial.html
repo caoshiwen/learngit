@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .sec-unbundling-success {
+
+        }
+    </style>
+</head>
+<!-- card_mag_card_detial -->
+<body>
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">信用卡详情</h2>
+    </header>
+    <section class="sec-my-card-list pt40 pl30 pb40 pr">
+            <div class="demo mb20 h220 w690 pr bgc4193ff br20">
+                <div class="bank-logo pa t40 l40 br50p bgcffffff w70 h70 op80">
+                    <img class="pa center-by-absolute w50" src="img/bank_logo.png">
+                </div>
+                <div class="card-info h110">
+                    <span class="bank-name pa l126 t40 fz28 lh28 cffffff">中国建设银行</span>
+                    <span class="card-type pa t86 l126 fz22 lh22 cffffff op60 ">储蓄卡</span>
+                    <p class="fz44 cffffff pa t136 l126 lh44 ls1">**** **** **** <span class="fz38">7080</span></p>
+                </div>
+            </div>
+    </section>
+    <section class="h20 w100p bgcf5f5f5"></section>
+    <section class="h200 pl38">
+        <a class="ac333333" href="card_mag_edit_card.html">
+            <div class="h200 w168 tac fz28 lh28 fl">
+                <img class="w88 mt26" src="img/card_detial_modify.png">
+                <p class="lh28 mt30">修改</p>
+            </div>
+        </a>
+        <a class="ac333333 btn-unbundling-show" href="javascript:void(0);">
+            <div class="h200 w168 tac fz28 lh28 fl">
+                <img class="w88 mt26" src="img/card_detial_unbundling.png">
+                <p class="lh28 mt30">解绑</p>
+            </div>
+        </a>
+        
+        <a class="ac333333" href="open_entities.html">
+            <div class="h200 w168 tac fz28 lh28 fl">
+                <img class="w88 mt26" src="img/card_detial_open_merchants.png">
+                <p class="lh28 mt30">开通实体</p>
+            </div>
+        </a>
+        <a class="ac333333" href="manual_bill.html">
+            <div class="h200 w168 tac fz28 lh28 fl">
+                <img class="w88 mt26" src="img/card_detial_manual_bill.png">
+                <p class="lh28 mt30">手动账单</p>
+            </div>
+        </a>
+    </section>
+    <section class="h20 w100p bgcf5f5f5"></section>
+
+    <section class="sec-unbundling w100p h100p dn">
+        <article class="w100p h100p bgc000000 op30 pf t0 l0"></article>
+        <article class="pf b0 l0 w100p bgcffffff">
+            <a class="btn-unbundling db w100p h100 tac ac2595f9 fz30 lh100" href="javascript:void(0);">解除绑定</a>
+            <div class="h20 w100p bgcf5f5f5"></div>
+            <a class="btn-unbundling-cancel db w100p h100 tac ac333333 fz30 lh100" href="javascript:void(0);">取消</a>
+        </article>
+    </section>
+
+
+    <section class="sec-unbundling-success pf t0 l0 w100p h100p dn">
+        <img class="w350 h200 center-by-absolute" src="img/card_mag_success_alert.png">
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/card_mag_card_detial.js"></script>
+<script src="js/change_font_size.js"></script>
+</html>

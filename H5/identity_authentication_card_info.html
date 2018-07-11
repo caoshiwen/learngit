@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px;-webkit-overflow-scrolling: touch;"  class="father-html">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray { 
+            background: none;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+
+    </style>
+</head>
+<!-- identity_authentication_card_info -->
+<body class="father-body my-card-for-more-plan bgcf5f5f5 h100p" style="-webkit-overflow-scrolling: touch;">
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">银行卡认证</h2>
+    </header>
+
+    <section class="w750 h20 bgcf5f5f5"></section>
+
+    <section class="pl30 bgcffffff">
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >持卡人</span>
+            <span class="c2222222">林守波</span>
+        </article>
+        <article class="w720 h2 bgcf5f5f5"></article>
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >身份证</span>
+            <input class="need-check-ipt id-ipt w468 ipt-no-outline bn" id="id-ipt" name="id-ipt" type="tel" placeholder="请输入身份证" maxlength="18">
+        </article>
+
+        <article class="w720 h2 bgcf5f5f5"></article>
+
+        <article class="h100 w720 lh100 fz32 ">
+            <span class="dib w208 c666666" >银行卡号</span>
+            <input class="need-check-ipt card-ipt w430 ipt-no-outline bn" id="card-ipt" name="card-ipt" type="tel" placeholder="请输入银行卡号" maxlength="19">
+            
+        </article>
+
+        <article class="w720 h2 bgcf5f5f5"></article>
+
+        <article class="bank-name-btn h100 w720 lh100 fz32 pr30">
+            <span class="dib w208 c666666" >银行名称</span>
+            <input class="need-check-ipt bank-name w438 ipt-no-outline bn bgn" id="bank-name" name="bank-name" type="text" placeholder="请选择您的银行" maxlength="19" disabled>
+            <img class="w12 fr mt44" src="img/biggerfcfcfc.png">
+        </article>
+
+        <article class="w720 h2 bgcf5f5f5"></article>
+
+        <article class="bank-name-de-btn h100 w720 lh100 fz32 pr30">
+            <span class="dib w208 c666666 ls2 pl2" >支行名称</span>
+            <input class="need-check-ipt bank-name-de w438 ipt-no-outline bn bgn" id="bank-name-de" name="bank-name-de" type="text" placeholder="请选择您的支行名称" maxlength="19" disabled>
+            <img class="w12 fr mt44" src="img/biggerfcfcfc.png">
+        </article>
+
+        <article class="w720 h2 bgcf5f5f5"></article>
+
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >手机号</span>
+            <input class="need-check-ipt phone-ipt w320 ipt-no-outline bn" id="phone-ipt" name="phone-ipt" type="tel" placeholder="银行预留手机号" maxlength="11">
+        </article>
+<!--         <article class="w720 h2 bgcf5f5f5"></article>
+        <article class="h100 w720 lh100 fz32 pr">
+            <span class="dib w208 c666666" >验证码</span>
+            <input class="need-check-ipt code-ipt w320 ipt-no-outline bn" type="tel" maxlength="6">
+            <a class="btn-get-code db w150 h50 pa t24 r30 acffffff bgc0086ff br10 fz22 lh50 tac" href="javascript:void(0);">获取验证码</a>
+        </article> -->
+    </section>
+
+
+    <section class="sec-go-next pt30 pb80">
+        <a class="btn-sure-add gray br10 blue-bg-button ml30 mt40" href="javascript:void(0);">确认</a>
+    </section>
+
+    <section class="result dn">
+        <div class="result-bg pa t0 l0 w100p h100p bgc000000 op30 zi10"></div>
+        <div class="w520 h270 center-by-absolute zi10 br10 ofh bgcffffff">
+            <p class="fz28 pl30 pt30 lh28">认证结果：</p>
+            <div >
+                <img class="pa t94 l230 w60 " src="img/identity_authentication_success.png">
+                <p class="pa t194 fz28 tac w100p lh28">实名认证成功</p>
+            </div>
+        </div>
+    </section>
+    <div class="bank-name-ifr-wrap w100p h100p pf t0 l0 zi11 dn" style="overflow: scroll;-webkit-overflow-scrolling: touch;">
+        <iframe class="bank-name-ifr w100p h100p" src="identity_search_bank.html" frameborder="0"></iframe>
+    </div>
+
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/identity_authentication_card_info.js"></script>
+<script src="js/change_font_size.js"></script>
+</html>

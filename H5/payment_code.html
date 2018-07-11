@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <!-- <link rel="stylesheet" href="css/payment_code.html"> -->
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("img/collection_bg.png");
+            background-repeat: no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+            background-position: top left;
+        }
+        .vip {
+            background-image: url("img/payment_code_vip_bg.png");
+            background-repeat: no-repeat;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+            background-position: top left;
+        }
+    </style>
+</head>
+<body>
+    <header class="common-header pr" style="background: none;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">付款码</h2>
+    </header>
+    <section class="mt10 ml30 w690 h906 br10 bgcffffff ofh pr">
+        <p class="vip h80 fz30 tac cffffff lh60">会员特权</p>
+        <img class="bar-code h206 w630 mt30 ml30" src="img/payment_bar_code_for_example.png">
+        <img class="2dcode w350 ml170 mt70" src="img/2dcode_forexample.png">
+        <!-- <p class="p-num-show mt40 tac fz56 lh56"></p> -->
+        <a class="bank-select db w690 h100 pa b0 l0 bgcf5f5f5 lh106 tac fz26 ac3333333" href="javascript:void(0)">
+            <img class="bank-logo w50 mr18" src="img/bank_logo.png" >
+            <span class="bank-name">中国建设银行 (7078)</span>
+            <img class="w14 ml14" src="img/payment_code_bigger.png">
+            <!-- <img class="" src="img/biggerfcfcfc.png"> -->
+        </a>
+    </section>
+    
+
+    <section class="sec-choose-card">
+        <article class="art-bg"></article>
+        <article class="art-card-list">
+            <h2>选择出款账户</h2>
+            <ul>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo_forexample_nonghang.png">
+                    <p class="bank-name">中国农业银行 (7078)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (1234)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (5678)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (9107)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+            </ul>
+        </article>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/payment_code.js"></script>
+<script src="js/change_font_size.js"></script>
+
+</html>

@@ -1,0 +1,53 @@
+@import "common";
+
+.sec-loading {
+    position: relative;
+    padding-top: (474rem / 75);
+    /* margin-top: (321rem / 75);*/
+    .loading-word {
+        text-align: center;
+        text-indent: 1em;
+        font-size: (32rem / 75);
+        color: #0086ff;
+
+    }
+}
+
+.sec-buttons {
+    margin-top: (280rem / 75);
+    .waiting-continue {
+        text-align: center;
+        font-size: (32rem / 75);
+        display: block;
+        width: (690rem / 75);
+        height: (100rem / 75);
+        border: 1px solid #0086ff;
+        -moz-border-radius: (10rem / 75);
+             border-radius: (10rem / 75);
+        margin-left: (30rem / 75);
+        line-height: (100rem / 75);
+        margin-bottom: (30rem / 75);
+    }
+    .check-order {
+        font-size: (32rem / 75);
+        display: block;
+        width: (690rem / 75);
+        height: (100rem / 75);
+        -moz-border-radius: (10rem / 75);
+             border-radius: (10rem / 75);
+        margin-left: (30rem / 75);
+        background-color: #0086ff;
+        color: white;
+        text-align: center;
+        line-height: (100rem / 75);
+    }
+}
+
+.common-loading {
+    @include commonLoading(1.5);
+    width: (140rem / 75)!important;
+    height: (140rem / 75)!important;
+    position: absolute;
+    top:(280rem / 75);
+    left:(750rem - (20 + 60)*1.5)/2/75;
+}

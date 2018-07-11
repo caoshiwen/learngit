@@ -1,0 +1,12 @@
+<html>
+    <head></head>
+    <body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/util.js"></script>
+        <script>
+            setSessionData("testdataname", "testitemname", "10:44");
+            var a = getSessionData("testdataname", "testitemname");
+            console.log(a);
+        </script>
+    </body>
+</html>

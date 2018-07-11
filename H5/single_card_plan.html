@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" href="css/single_card_plan.css">
+    <link rel="stylesheet" type="text/css" href="dist/mobileSelect.css">
+    <style>
+        .art-real-store .title-real-store img{
+            -webkit-transform: rotateZ(-90deg);
+            -ms-transform: rotateZ(-90deg);
+            -o-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
+        }
+        .art-real-store.active .title-real-store img{
+            -webkit-transform: rotateZ(90deg);
+            -ms-transform: rotateZ(90deg);
+            -o-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+        }
+        .art-real-store.active .content-real-store {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">单卡还款计划</h2>
+        <!-- <a class="add-card" href="#"><img src="img/add.png"></a> -->
+    </header>
+    <section class="sec-my-card-list">
+        <article class="art-card">
+            <div class="bank-logo">
+                <img src="img/bank_logo.png">
+            </div>
+
+            <div class="card-info">
+                <p class="bank-name">中国建设银行</p>
+                <p class="card-type">储蓄卡</p>
+                <p class="card-id"><span class="star">**** **** **** </span><span>7078</span></p>
+            </div>
+
+            <!-- <img class="problem active" src="img/card_has_problem.png"> -->
+        </article>
+    </section>
+
+    <section class="sec-pay-info">
+        <article class="art-pay-data pay-number">
+            <p class="pay-info-title">还款金额</p>
+            <div class="pay-content">
+                <!-- <ul>
+                    <li> -->
+                        <span class="chinese-d">￥</span>
+                        <div class="ipt-wrap h80 w600 ofh pa t22 l98">
+                            <input id="pay-number" class="ipt-pay-number" type="tel" value="33" onkeyup="onlyNumber(this)" >
+                        </div>
+                    <!-- </li>
+                </ul> -->
+            </div>
+        </article>
+        <article class="art-pay-data">
+            <p class="pay-info-title">还款日期</p>
+            <div class="pay-content date">
+                <ul>
+                    <label for="start-time">
+                        <li>
+                            <span class="content-title">开始还款日期</span>
+                            <span id="span-start-time" class="content-data">2018-04-07</span>
+                            <img src="img/biggerfcfcfc.png">
+                            
+                            <input id="start-time" class="ipt-time" type="text" data-options="{'type':'YYYY-MM-DD','beginyear':2010,'endyear':2088,'limitTime':'today'}" min="2018-07-06">
+                            <!-- beginYear 开始年份
+                            endYear 结束年份，可不填，默认不会小于当前
+                            limitTime可选 today：今天之前的日期不可选 tomorrow：明天之前的不可选
+                                location可选 before：跳转至之前选择的时间 -->
+                        </li>
+                    </label>
+                    <li>
+                        <label for="end-time">
+                            <span class="content-title">最后还款日期</span>
+                            <span id="span-end-time" class="content-data">2018-04-25</span>
+                            <img src="img/biggerfcfcfc.png">
+                        </label>
+                        <input id="end-time" class="ipt-time" type="date">
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="art-pay-data">
+            <p class="pay-info-title">预留金</p>
+            <div class="pay-content live-price">
+<!--                 <ul>
+                    <li> -->
+                        <div class="live-number-show">
+                            <span class="chinese-d">￥</span>
+                            <div class="ipt-wrap h80 w600 ofh pa b12 l68">
+                                <input id="stay-number" class="ipt-pay-number" type="tel" value="33" onkeyup="onlyNumber(this)">
+                            </div>
+                        </div>
+<!--                     </li>
+                    <li> -->
+                        <div class="live-number-info">
+                            <img src="img/get_attention.png">
+                            <p>请输入本账号卡内余额1000元以下最优尽量到完美账单</p>
+                        </div>
+<!--                     </li>
+                </ul> -->
+            </div>
+        </article>
+
+        <!-- 地区及商户 -->
+        <article class="art-pay-data art-real-store">
+            <div class="pay-info-title title-real-store pr30">
+            实体商户还款
+                <img src="img/bigger432100.png" class="fr mt16" style="width: calc(12rem / 75);">
+            </div>
+            <div class=" dn content-real-store">
+                <div class="pl30">
+                    <div class="place h140 fz28 pr30">
+                        <div class=" fl">
+                            <p class="c888888 fz22 lh22 mt32">
+                            地区 (可不选)</p>
+                            <p class="place-show mr20 c111111 fz30 lh30 mt26">浙江省 杭州市</p>
+                        </div>
+                        <img class="mt48 w32 h44 fr" src="img/pay_immed_place.png">
+                    </div>
+                    <div class="h1 bgce5e5e5"></div>
+                    <div class="store h140 fz28 pr30">
+                        <div class=" fl">
+                            <p class=" c888888 fz22 lh22 mt32">选择商户类型 (必选)</p>
+                            <p class="store-show mr20 c111111 fz30 lh30 mt26">超市</p>
+                        </div>
+                        <img class="mt48 h44 w45 fr" src="img/pay_immed_store.png">
+                    </div>
+                </div>
+            <div class="h20 bgcf5f5f5"></div>
+            </div>
+        </article>
+        <article class="art-agree-with-us" style="padding-top: 0;">
+            <div class="bg-white">
+                            
+                <img id="agree-with-us" class="gray" src="img/agree_with_us_gray.png">
+                <span>我已阅读并同意<a href="#">《用户服务协议》</a></span>
+            </div>
+        </article>
+    </section>
+
+<!--     <section class="sec-show-bank">
+        <a href="javascript:void(0);"><article class="art-show-bank">
+            <p>选择出款账户</p>
+            <img src="img/biggerfcfcfc.png">
+        </article> </a>              
+    </section> -->
+    <section class="sec-go-next pb80">
+        <a href="sure_order_v2.html" disabled = "true">下一步</a>
+    </section>
+    <section class="sec-warm-prompt">
+        <article class="art-prompt-content">
+            <h2 class="prompt-title">温馨提示</h2>
+            <p class="prompt-word">自2018年3月开始，智能还款系统增加了附近落地商户名称，同卡进去金额在1000元以下消费超越1000元以上消费的一般是商旅百货、各位如果想获取完美账单，建议1000元以下，但不限于排除其他名称，望熟知！</p>
+            <ul class="prompt-list">
+                <li class="prompt-item">
+                    <span class="item-name">本次还款总金额</span>
+                    <span class="item-content">5555.00元</span>
+                </li>
+                <li class="prompt-item">
+                    <span class="item-name">本次预估还款笔数</span>
+                    <span class="item-content">10/笔</span>
+                </li>
+                <li class="prompt-item">
+                    <span class="item-name">本次预备金</span>
+                    <span class="item-content">580.00元</span>
+                </li>
+                <li class="prompt-item">
+                    <span class="item-name">本次预估手续费</span>
+                    <span class="item-content">45.00元</span>
+                </li>
+            </ul>
+            <a class="btn-i-know" href="javascript:void(0);">我知道了</a>
+        </article>
+        <article class="art-bg">
+            
+        </article>
+
+    </section>
+<!-- 
+    <section class="sec-choose-card">
+        <article class="art-bg">
+            
+        </article>
+        <article class="art-card-list">
+            <h2>选择出款账户</h2>
+            <ul>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (7078)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (1234)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (5678)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+                <li class="li-card">
+                    <img class="bank-logo" src="img/bank_logo.png">
+                    <p class="bank-name">中国农业银行 (9107)</p>
+                    <img class="is-choose" src="img/pay_immed_choose_card_correct.png">
+                </li>
+            </ul>
+        </article>
+    </section> -->
+
+    <iframe class="dn w100p h100p pf t0 l0 z10" src="pay_immed_store_choose.html" frameborder="0"></iframe>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="dist/mobileSelect.min.js"></script>
+<script src="dist/jqdate/jquery.date.js"></script>
+<script src="js/single_card_plan.js"></script>
+<script src="js/change_font_size.js"></script>
+
+</html>

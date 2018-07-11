@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray { 
+            background: none;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+
+    </style>
+</head>
+<body class="my-card-for-more-plan">
+    <header class="common-header">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">中国银联</h2>
+    </header>
+    <section class="h160 w750 tac lh160">
+        <img class="w384" src="img/quick_payment_cina_unionpay_logo.png">
+    </section>
+    <section class="w750 h20 bgcf5f5f5"></section>
+    <section class="pl30">
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >支付金额</span>
+            <span class="c2222222">20000.00元</span>
+        </article>
+    </section>
+    <section class="w750 h20 bgcf5f5f5"></section>
+    <section class="pl30">
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >银行卡</span>
+            <span class="c2222222">中国工商银行储蓄卡</span>
+        </article>
+        <article class="w720 h2 bgcf5f5f5"></article>
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >卡号</span>
+            <span class="c2222222">6222 0812 0300 2479 661</span>
+        </article>
+    </section>
+
+    <section class="w750 h20 bgcf5f5f5"></section>
+    <section class="pl30">
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >有效期</span>
+            <input class="need-check-ipt validity-ipt w320 ipt-no-outline bn ml-4" type="tel" placeholder="有效期年/月" maxlength="4">
+        </article>
+        <article class="w720 h2 bgcf5f5f5"></article>
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666 ls2 pl2" >VCC2</span>
+            <input class="need-check-ipt vcc-ipt w320 ipt-no-outline bn" type="tel" placeholder="CVV2，卡背后3位" maxlength="3">
+        </article>
+    </section>
+    <section class="w750 h20 bgcf5f5f5"></section>
+    <section class="pl30">
+        <article class="h100 w720 lh100 fz32">
+            <span class="dib w208 c666666" >手机号</span>
+            <input class="need-check-ipt phone-ipt w320 ipt-no-outline bn" type="tel" placeholder="银行预留手机号" maxlength="11">
+        </article>
+        <article class="w720 h2 bgcf5f5f5"></article>
+        <article class="h100 w720 lh100 fz32 pr">
+            <span class="dib w208 c666666" >验证码</span>
+            <input class="need-check-ipt code-ipt w320 ipt-no-outline bn" type="tel" maxlength="6">
+            <a class="btn-get-code db w150 h50 pa t24 r30 acffffff bgc0086ff br10 fz22 lh50 tac" href="javascript:void(0);">获取验证码</a>
+        </article>
+    </section>
+    <section class="w750 h20 bgcf5f5f5"></section>
+
+    <section class="sec-go-next pt30 pb80">
+        <!-- <article class="art-agree-with-us" style="padding-top: 0;"> -->
+            <div class="bg-white lh36 h36 pl30 fz28 c888888">
+                <img class="h36 fl not-agree" id="agree-with-us" src="img/agree_with_us_gray.png">
+                <span class="ml24 fl">我已阅读并同意<a class="ac0086ff" href="#">《用户服务协议》</a></span>
+            </div>
+        <!-- </article> -->
+        <a class="btn-sure-add gray br10 blue-bg-button ml30 mt40" href="waiting.html">确认支付</a>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/quick_payment_china_unionpay.js"></script>
+<script src="js/change_font_size.js"></script>
+</html>

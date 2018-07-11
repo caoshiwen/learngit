@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px"  class="no-scrollbar">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" href="css/billing_records.css">
+
+    <!-- <link rel="stylesheet" href="css/single_card_plan.css"> -->
+    <style>
+        header {
+            /*background:none!important;*/
+        }
+        .btn-top {
+            background-image: url("img/get_bill_btn_bg.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+            -webkit-background-size: calc(280rem / 75);
+            background-size: calc(280rem / 75);
+        }
+        .tab-btn.active {
+            border-color: #0086ff!important;
+            color: #0086ff;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
+    </style>
+</head>
+<body class="no-scrollbar" style="padding-top: calc(666rem / 75);">
+    <header class="pf zi10 t-40 common-header bb1scccccc ofh" style="background: url('img/card_my_income_top_bg.png'); border:none;background-size: 10rem auto; background-repeat: no-repeat; position: fixed;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title" style="color: #fff;">我的收益</h2>
+    </header>
+    <section class="h300 w750 pf zi2 t-40 l0">
+        <img class="pa t0 l0 w750 h400 zi-1" src="img/card_my_income_top_bg.png">
+        <p class="tac fz24 lh24 cffffff op50 mt160">可用额度</p>
+        <p class="tac fz74 lh74 cffffff mt40">5,222.00</p>
+        <a href="card_account_safe.html">
+            <div class="pa t170 r-34 w120 h60 br30 bgc0086ff pl20 pt8 lh36">
+                <img src="img/card_my_income_save_icon.png" class="w32">
+                <div class="pa t12 l46 bgcf83535 w10 h10 br50p"></div>
+            </div>
+        </a>
+    </section>
+
+    <section class="h78 w750 pf t360 l0 zi3">
+        <article class="pa b0 l30 w690 h130 br10 bgcffffff bs0081aeaeae60 pt38">
+            <div class="h64">
+                <div class="w344 tac fl">
+                    <p class="fz28 lh28 fw1000">1,212.12</p>
+                    <p class="fz22 lh22 mt14 c888888">总收益（元）</p>
+                </div>
+                <div class="mt10 h40 w2 bgceeeeee fl"></div>
+                <div class="w344 tac fl">
+                    <p class="fz28 lh28 fw1000">06-01</p>
+                    <p class="fz22 lh22 mt14 c888888">我的资产（股）</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="h188 w750 pt70 pf t438 zi2 bgcffffff">
+        <article class="clearfix">
+            <div class="tab-btn tab-btn-1 active w200 pt16 pb16 fz26 lh26 b1s0086ff tac fl ml38" style="border-radius: calc(32rem / 75); border-color: #ccc;">
+                商品分销收益
+            </div>
+            <div class="tab-btn tab-btn-2 w200 pt16 pb16 fz26 lh26 b1s0086ff tac fl ml38" style="border-radius: calc(32rem / 75); border-color: #ccc;">
+                分销收款收益
+            </div>
+            <div class="tab-btn tab-btn-3 w200 pt16 pb16 fz26 lh26 b1s0086ff tac fl ml38" style="border-radius: calc(32rem / 75); border-color: #ccc;">
+                合伙人收益
+            </div>
+        </article>
+        <article class="h20 w750 bgcf5f5f5 mt40"></article>
+    </section>
+
+    <section class="">
+
+        <div class="tab-content tab-content-1 pb100 dn active">
+            <p class="fz30 c111111 fw700 pl30 mt30">收付还收益<span class="fz24 c888888">(近7天)</span></p>
+            <div class="mr30 ml30 pr30 pt10 chart-1-wrap pr bs-0-0-6-0-dddddd mt40">
+                <canvas id="chart-1" class="w680 h440"></canvas>
+            </div>
+            <div class="mr30 ml30 pr40 pl40 pt50 pb48 chart-1-wrap pr bs-0-0-6-0-dddddd mt40">
+                <p class="fz22 c888888 lh22">总收益</p>
+                <p class="fz40 lh40 mt24">2342.12</p>
+                <div class="clearfix mt50">
+                    <div class="fl mr54">
+                        <p class="fz22 c888888 lh22">今日收益</p>
+                        <p class="fz30 lh30 mt22">2342.12</p>
+                    </div>
+                    <div class="fl mr54">
+                        <p class="fz22 c888888 lh22">昨日收益</p>
+                        <p class="fz30 lh30 mt22">2342.12</p>
+                    </div>
+                    <div class="fl mr54">
+                        <p class="fz22 c888888 lh22">预计收益</p>
+                        <p class="fz30 lh30 mt22">2342.12</p>
+                    </div>
+                </div>
+                <div class="h1px bgce5e5e5 mt40"></div>
+                <div class="clearfix pt46">
+                    <div class="fl">
+                        <p class="fz22 c888888 lh22">可提现佣金</p>
+                        <p class="fz40 lh40 mt24 c0086ff">5656.54</p>
+                    </div>
+                    <a class="db fr w200 fz24 lh24 pt14 pb14 cffffff bgc0086ff tac" style="border-radius: calc(30rem / 75);" href="withdrawal.html">立即提现</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content tab-content-2 dn">
+            2
+        </div>
+
+        <div class="tab-content tab-content-3 dn">
+            3
+        </div>
+    </section>
+    <div ></div>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="dist/chart/chart.js"></script>
+<script src="js/util.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="dist/f2/f2.js"></script>
+<script src="js/card_my_income.js"></script>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" href="dist/swipeslider.css">
+    <link rel="stylesheet" href="css/card.css">
+    <style>
+        
+    </style>
+</head>
+<body class="card">
+    <div class="pt160">
+        <section class="sec-card-top ofh">
+            <article class="header h120 w750 pf t0 l0 zi11">
+                <div class="btn-me w70 h70 br50p ofh pa l30 b22"><img class="w72 center-by-absolute" src="img/header_forexample.png"></div>
+                <a href="setting.html"><img class="btn-setting w38 pa b40 r138" src="img/home_top_setting_icon.png"></a>
+                <a href="message.html">
+                    <img class="btn-msg w38 pa b46 r30" src="img/home_top_msg_icon.png">
+                    <div class="cir pa b68 r24 br50p w10 h10 bgcf83535"></div>
+                </a>               
+            </article>
+            <article class="h120 w750 pr pt50">
+                <h1 class="fz42 fw700 ml50 lh42">账单</h1>
+                <span class="c888888 pa r80 b30 lh30 fz30">/</span>
+                <span class="order-num c888888 pa r50 b30 lh20 fz20">1</span>
+            </article>
+            <article class="h280 w750 pr">   
+                <figure id="full_feature" class="swipslider h280 w670 center-by-absolute">
+                <!-- <article class="art-banner"> -->
+                    <ul class="sw-slides ul-banner h280">
+                        <li class="sw-slide demo li-banner pr">
+                            <a href="bill_list.html">
+                                <div class="h280 w650 pr bgc4193ff br10 center-by-absolute">
+                                    <div class="bank-logo pa t40 l40 br50p bgcffffff w50 h50 op80">
+                                        <img class="pa center-by-absolute w36" src="img/bank_logo.png">
+                                    </div>
+                                    <div class="card-info h50 mt40">
+                                        <span class="bank-name ml106 fz28 lh50 cffffff">中国建设银行</span>
+                                        <span class="card-type ml8 lh50 fz20 cffffff op60 ">储蓄卡7078</span>
+                                    </div>
+                                    <div class="pt60 h142 w650 cffffff tac">
+                                        <div class="fl h78 w324">
+                                            <p class="fz36 lh36">3,604.08</p>
+                                            <p class="mt18 fz24 op60 lh24">本期账单</p>
+                                        </div>
+                                        <div class="mt24 fl h30 w2 bgcffffff op60"></div>
+                                        <div class="fl h78 w324">
+                                            <p class="fz30 lh30">11天后到期</p>
+                                            <p class="mt24 fz28 op60 lh28">05-25</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sw-slide demo li-banner pr">
+                            <a href="bill_list.html">
+                                <div class="h280 w650 pr bgc4193ff br10 center-by-absolute">
+                                    <div class="bank-logo pa t40 l40 br50p bgcffffff w50 h50 op80">
+                                        <img class="pa center-by-absolute w36" src="img/bank_logo.png">
+                                    </div>
+                                    <div class="card-info h50 mt40">
+                                        <span class="bank-name ml106 fz28 lh50 cffffff">中国建设银行</span>
+                                        <span class="card-type ml8 lh50 fz20 cffffff op60 ">储蓄卡7078</span>
+                                    </div>
+                                    <div class="pt60 h142 w650 cffffff tac">
+                                        <div class="fl h78 w324">
+                                            <p class="fz36 lh36">3,604.08</p>
+                                            <p class="mt18 fz24 op60 lh24">上期账单</p>
+                                        </div>
+                                        <div class="mt24 fl h30 w2 bgcffffff op60"></div>
+                                        <div class="fl h78 w324">
+                                            <p class="fz30 lh30">12天后出账单</p>
+                                            <p class="mt24 fz28 op60 lh28">05-25</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                <!-- </article> -->
+                </figure>
+                <img class="w838 pa b-36 zi10" src="img/home_banner_shoadow.png">
+            </article>
+        </section>
+        <section class="sec-i-need mt60">
+            <div class="title-button">
+                <a class="pay active" href="javascript:void(0);"><img src="img/i_need_acbt_bg.png"><span class="">我要还款</span></a>
+                <a class="collection" href="javascript:void(0);"><img src="img/i_need_acbt_bg.png"><span>我要收款</span></a>
+            </div>
+            <div class="content content-1 active">
+                <ul>
+                    <a onclick="setSessionData('card', 'single_or_multiple', 'single');" href="my_card_for_single_pay.html"><li>
+                        <img src="img/pay_button_1.png">
+                        <p>单卡速还</p>
+                    </li></a>
+                    <a onclick="setSessionData('card', 'single_or_multiple', 'multiple');" href="my_card_for_single_pay.html"><li>
+                        <img src="img/pay_button_2.png">
+                        <p>多卡速还</p>
+                    </li></a>
+                    <a href="my_card_for_single_plan.html"><li>
+                        <img src="img/pay_button_3.png">
+                        <p>单卡计划</p>
+                    </li></a>
+                    <a href="my_card_for_more_plan.html"><li>
+                        <img src="img/pay_button_4.png">
+                        <p>多卡计划</p>
+                    </li></a>
+                </ul>
+            </div>
+            <div class="content content-2">
+                <ul>
+                    <a href="richscan_num_ipt.html"><li>
+                        <img src="img/collection_button_1.png">
+                        <p>扫一扫</p>
+                    </li></a>
+                    <a href="collection_richscan_num_ipt.html"><li>
+                        <img src="img/collection_button_2.png">
+                        <p>收款码</p>
+                    </li></a>
+                    <a href="payment_code.html"><li>
+                        <img src="img/collection_button_3.png">
+                        <p>付款码</p>
+                    </li></a>
+                    <a href="quick_payment.html"><li>
+                        <img src="img/collection_button_4.png">
+                        <p>快捷收款</p>
+                    </li></a>
+                </ul>
+            </div>
+        </section>
+        <section class="lh30 pl30 mt50 mb34">
+            <span class="w8 h28 br4 bgc0086ff db fl mr14"></span>
+            <p class="fz30 fw700 lh30">其他功能<a class="fr ac0086ff fz24 lh24 mr30 fw400" href="card_all_application.html">全部</a></p>
+        </section>
+        <section class="sec-buttons">
+            <ul>
+                <li>
+                    <a class="btn-true-prove" href="identity_authentication.html">
+                        <img src="img/home_btn_true_prove.png">
+                        <span>实名认证</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my_card_in_card_mag.html">
+                        <img src="img/home_btn_card_mag.png">
+                        <span>信用卡管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="withdrawal.html">
+                        <img src="img/home_btn_transfer_stage.png">
+                        <span>转账分润</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="other_person_pay_mag.html">
+                        <img src="img/home_btn_other_person_pay.png">
+                        <span>代还管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="register_for_friends.html">
+                        <img src="img/home_btn_reigster_for_friend.png">
+                        <span>帮朋友注册</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plan_list.html">
+                        <img src="img/home_btn_plan_list.png">
+                        <span>计划列表</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="billing_records.html">
+                        <img src="img/home_btn_order_mag.png">
+                        <span>账单记录</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </section>
+
+        <section class="sec-share">
+            <a href="promote.html">
+                <img src="img/share.png">
+            </a>
+        </section>
+        <section class="sec-join-us">
+            <a href="vip_area.html">
+                <img src="img/join_us.png">
+            </a>
+        </section>
+
+        <section class="lh30 pl30 mt50 mb4">
+            <span class="w8 h28 br4 bgc0086ff db fl mr14"></span>
+            <p class="fz30 fw700 lh30">甄选商品<a class="fr ac0086ff fz24 lh24 mr30 fw400" href="#">全部</a></p>
+
+        </section>
+        <section class="sec-goods">
+            <ul class="goods-contents">
+                <a class="ac333333" href="store_goods.html">
+                    <li>
+                        <img class="goods-img" src="img/goods_1.png">
+                        <div class="goods-info">
+                            <p class="goods-name">草编带该收纳箱</p>
+                            <p class="goods-price">￥26.90</p>
+                        </div>
+                    </li>
+                </a>
+                <a class="ac333333" href="store_goods.html">
+                    <li>
+                        <img class="goods-img" src="img/goods_2.png">
+                        <div class="goods-info">
+                            <p class="goods-name">北欧实木梳妆台</p>
+                            <p class="goods-price">￥288.00</p>
+                        </div>
+                    </li>
+                </a>
+                <a class="ac333333" href="store_goods.html">
+                    <li>
+                        <img class="goods-img" src="img/goods_1.png">
+                        <div class="goods-info">
+                            <p class="goods-name">北欧简约实木沙发</p>
+                            <p class="goods-price">￥699.00</p>
+                        </div>
+                    </li>
+                </a>
+                <a class="ac333333" href="store_goods.html">
+                    <li>
+                        <img class="goods-img" src="img/goods_2.png">
+                        <div class="goods-info">
+                            <p class="goods-name">欧式创意纸巾盒</p>
+                            <p class="goods-price">￥32.50</p>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </section>
+    </div>
+    <a class="go-top" href="javascript:toTop();"><img src="img/go_top.png"></a>
+    <script>
+        function toTop() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 300);
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/card.js"></script>
+    <script type="text/javascript" src="dist/swipeslider.min.js"></script>
+    <!-- <script></script> -->
+    <link rel="stylesheet" href="css/fonts.css">
+</body>
+</html>

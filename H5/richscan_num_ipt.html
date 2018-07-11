@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray { 
+            background: none;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+    </style>
+</head>
+<body>
+    <header class="common-header pr">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">收款</h2>
+    </header>
+    <section class="pt30 pl30">
+        <article class="w690 h320 pt30 pl30 br20 bs-0-0-10-0-dddddd">
+            <p class="fz30 lh30">收款金额</p>
+            <div class="h152 tab pr">
+                <span class="fz60 pa b12 ml-8">￥</span>
+                <div class="ipt-wrap h80 w580 ofh pa b18 l68">
+                    <input class="ipt-price need-check-ipt ipt-no-outline bn fz80 w600 pa t-16" type="tel" value="" maxlength="10">
+                </div>
+            </div>
+            <div class="w630 h1px bgcf5f5f5"></div>
+            <input class=" mt44 w630 fz26 lh26 c888888 ipt-no-outline bn" type="text" maxlength="20" placeholder="收款说明 (可选填)">
+        </article>
+    </section>
+    <section class="sec-go-next mt100">
+        <a class="btn-sure gray br10 blue-bg-button ml30" href="waiting.html">确认收款</a>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/richscan_num_ipt.js"></script>
+<script src="js/change_font_size.js"></script>
+
+</html>

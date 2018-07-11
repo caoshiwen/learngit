@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px;">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray,.gray *{
+            background-color: #888;
+            background-image: none!important;
+            pointer-events: none;
+        }
+        .width-transition {
+            -webkit-transition-duration: 1200ms;
+            -o-transition-duration: 1200ms;
+            transition-duration: 1200ms;
+            -webkit-transition-property: width;
+            -o-transition-property: width;
+            transition-property: width;
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body class="fl pt140 bgcf5f5f5 pb180">
+    <header class="pf zi10 t-40 common-header bb1scccccc bgcffffff" style="background: none; background-color: #ffffff;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <h2 class="title" style="color: #333333;">发布商品</h2>
+    </header>
+    <section class="bgcffffff">
+        <div class="h220 pr zi2 w750 ofxs no-scrollbar">
+            <label for="ipt-img-show-1">
+                <div class="img-block-bg-show h220 tac pt28 pa t0 l0 zi-1 w750">
+                    <img class="w76" src="img/vip_power_release_goods_show.png">
+                    <p class="fz26 lh26 mt10">上传展示图（限6张）</p>
+                </div>
+            </label>
+            <div class="img-block-show vat clearfix pt40 dn" style="width: 1000px;">
+                <div class="w140 h140 fl ml30 pr">
+                    <label for="ipt-img-show-1">
+                        <img class="w140 h140 object-fit-cover" src="img/store_goods_img_upload.png">
+                        <input id="ipt-img-show-1" class="ipt-img dn" type="file" capture="camera" accept="image/*"/>
+                    </label>
+                    <img src="img/vip_power_release_goods_cancel_img.png" alt="" class="w30 pa t0 r0 cancel_img">
+                </div>
+            </div>
+        </div>
+        <div class="h20 bgcf5f5f5"></div>
+        <div class="h220 pr zi2 w750 ofxs no-scrollbar">
+            <label for="ipt-img-detial-1">
+                <div class="img-block-bg-detial h220 tac pt28 pa t0 l0 zi-1 w750">
+                    <img class="w76" src="img/vip_power_release_goods_detial.png">
+                    <p class="fz26 lh26 mt10">上传详情图（限10张）</p>
+                </div>
+            </label>
+                <div class="img-block-detial vat clearfix pt40 dn" style="width: 1000px;">
+                <div class="w140 h140 fl ml30">
+                    <label for="ipt-img-detial-1">
+                        <img class="w140 h140 object-fit-cover" src="img/store_goods_img_upload.png">
+                        <input id="ipt-img-detial-1" class="ipt-img dn" type="file" capture="camera" accept="image/*"/>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="h20 bgcf5f5f5"></div>
+        <div class="pl30 pt30">
+            <div class=" fz36 lh90">
+                <input class="w690 ipt-no-outline bn ipt-padding-zero" type="text" maxlength="100" placeholder="商品标题">
+            </div>
+            <div class="h1px bgcf5f5f5"></div>
+            <div class="pr pb50 pt20 pb30">
+                <textarea name="" id=""  class="detial-message w690 h390 fz30 ipt-no-outline bn pr30 no-scrollbar db" style="resize: none;" placeholder="商品描述" maxlength="1200"></textarea>
+                <div class="fz18 c888888 lh18 pa r30 b30"><span class="words-num">0</span>/1200</div>
+            </div>
+        </div>
+        <div class="h20 bgcf5f5f5"></div>
+        <div class="pl30">
+            <div class="fz28 lh28 pt38 pb38 clearfix pr30">
+                <span class="fl">分类</span>
+                <img src="img/biggerfcfcfc.png" class="w12 fr mt2">
+                <span class="fr c888888 mr16">请选择</span>
+            </div>
+            <div class="h1px bgcf5f5f5"></div>
+            <div class="fz28 lh28 pt38 pb38 clearfix pr30">
+                <span class="fl">价格</span>
+                <img src="img/biggerfcfcfc.png" class="w12 fr mt2">
+                <span class="fr c888888 mr16">点击输入</span>
+            </div>
+        </div>
+    </section>
+    <a href="store_goods_order.html">
+        <section class="send-btn h100 lh100 w750 blue-bg-button-no-radius pf b0 gray">
+            发布
+        </section>
+    </a>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/util.js"></script>
+<script src="js/vip_power_release_goods.js"></script>
+</html>

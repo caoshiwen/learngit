@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" type="text/css" href="dist/mobileSelect.css">
+    <style>
+        .gray {
+            pointer-events: none;
+            color: #aaa!important;;
+        }
+        .ok {
+
+        }
+        .default-check.active {
+            border-color: #0086ff;
+        }
+        .default-check.active div {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="common-header bb1scccccc" style="background: none;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <a class="btn-save ac0086ff fr fz34 pa b34 r30 lh34 gray zi10" href="javascript:bottomTip('保存成功');">保存</a>
+        <h2 class="title" style="color: #333333;">编辑地址</h2>
+    </header>
+    <section class="h30 w100p bgcf5f5f5"></section>
+    <section class="pl30">
+        <label for="ipt-person-name">
+            <article class="h100 pr30 fz28 lh100 bgcffffff">
+                <span class="fz28 fl db w230">联系人</span>
+                <input id="ipt-person-name" class="ipt-person-name ipt-need-check fz28 w300 ipt-no-outline bn" type="text" maxlength="15" placeholder="请填写联系人" value="王蕾">
+            </article>
+        </label>
+        <article class="h1px bgce5e5e5"></article>
+        <label for="ipt-phone-num">
+            <article class="h104 pr30 fz28 lh104 bgcffffff">
+                <span class="fz28 fl db w230">手机号码</span>
+                <input id="ipt-phone-num" class="ipt-phone-num ipt-need-check fz28 w300 ipt-no-outline bn" type="tel" maxlength="11" placeholder="请填写手机号码" value="13123123112">
+            </article>
+        </label>
+        <article class="h1px bgce5e5e5"></article>
+        <article class="place h100 lh100 fz28 pr30">
+            <span class="fl w230">地区</span>
+            <img class="mt40 w12 fr" src="img/biggerfcfcfc.png">
+            <span class="place-show fl mr20 c888888" my-value = "[1][1]">浙江 杭州</span>
+        </article>
+        <article class="h1px bgce5e5e5"></article>
+        <label for="ipt-address-detial">
+            <article class="h100 pr30 fz28 lh100 bgcffffff">
+                <span class="fz28 fl db w230">详细地址</span>
+                <textarea id="ipt-address-detial" class="ipt-address-detial ipt-need-check fz28 w400 ipt-no-outline bn lh32 mt14 no-scrollbar" rows="3" cols="40" style="resize: none;">浙江省 杭州市 滨江区 浦沿街道 谷丰大厦 1129室</textarea>
+            <a class="clear-address-detial db fr h100 w60" href="javascript:void(0);" style="display: none;">
+                <img class="mt40 w30 fr" src="img/address_edit_clear.png">
+            </a>
+            </article>
+        </label>
+    </section>
+    <section class="h30 w100p bgcf5f5f5 mt20"></section>
+    <section class="pl30">
+        <article class="atr-default-check h100 lh100 fz28 pr30">
+            <span class="fl">设为默认地址</span>
+            <div class="default-check mt34 w26 h26 fr br4 b1s777777 pr">
+                <div class="w16 h16 center-by-absolute bgc0086ff dn"></div>
+            </div>
+        </article>
+    </section>
+    <section class="h30 w100p bgcf5f5f5"></section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="dist/mobileSelect.min.js"></script>
+<script src="js/address_edit.js"></script>
+</html>

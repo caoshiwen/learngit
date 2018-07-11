@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <link rel="stylesheet" href="dist/swipeslider.css">
+
+    <style>
+        .goods-img {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .sw-next-prev {
+            display: none;
+        }
+        .swipslider {
+            padding: 0!important;
+        }
+        .swipslider .sw-bullet {
+            bottom:calc(74rem / 75);
+            font-size: calc(12rem / 75);
+            line-height: calc(12rem / 75);
+        }
+        .swipslider .sw-bullet li {
+            width: calc(20rem / 75);
+            height: calc(3rem / 75);
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: calc(1rem / 75);
+        }
+        .swipslider .sw-bullet li:not(:last-child) {
+            margin-right: calc(20rem / 75);
+        }
+        .swipslider .sw-bullet li.active {
+            background-color: #ffd018;
+        }
+        .content-block.active {
+            color: #0a9ffd;
+        }
+        .content-block.active .line {
+            display: block;
+        }
+        .help-btns.active {
+            display: block;
+        }
+
+        .type li.active {
+            color:#ffffff;
+            background-color: #0a9ffd;
+        }
+
+        .gray { 
+            color:#c3c3c3 !important;
+            pointer-events: none;
+         }
+        .goods-show-block-btn.active {
+            color: #111;
+        }
+        .goods-show-block-btn.active .line{
+            display: block;
+         }
+        .good-block-inner-wrap {
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-property: margin-left;
+            -o-transition-property: margin-left;
+            transition-property: margin-left;
+            -webkit-transition-duration: 300ms;
+            -o-transition-duration: 300ms;
+            transition-duration: 300ms;
+        }
+    </style>
+</head>
+<body class="fl">
+    <header class="common-header bb1scccccc pf t-40 zi10 bgcffffff" style="background: none; background-color: #fff">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <div class="title" style="color: #333333; line-height: calc(44rem / 75);font-size: (34rem / 75);height: calc(44rem / 75); bottom:calc(28rem / 75);">
+            <img class="w44 h44 br10 mt-2" src="img/header_forexample.png">
+            <span class="">鱼岛主人</span>
+        </div>
+    </header>
+    <section class="h560 pr pt140">
+        <figure id="full_feature" class="swipslider pa t0 l0 zi1 w750 h420" >
+            <ul class="sw-slides">
+                <li class="sw-slide">
+                    <img class="goods-img" src="img/store_goods_forexample.png">
+                </li>
+                <li class="sw-slide">
+                    <img class="goods-img" src="img/vip_goods_img_forexample.png">
+                </li>
+                <li class="sw-slide">
+                    <img class="goods-img" src="img/vip_goods_img_forexample.png">
+                </li>
+            </ul>
+        </figure>
+    </section>
+    <section class="w690 h180 br20 bgcffffff ml30 pr t-50 zi2 pl10 pr10" style="box-shadow: 0 4px 8px #eee;">
+        <div class="w134 tac h100p lh58 pt40 fl">
+            <img class="h58" src="img/store_home_icon_1.png">
+            <p class="fz24 lh24 mt20">数码</p>
+        </div>
+        <div class="w134 tac h100p lh58 pt40 fl">
+            <img class="h58" src="img/store_home_icon_2.png">
+            <p class="fz24 lh24 mt20">箱包</p>
+        </div>
+        <div class="w134 tac h100p lh58 pt40 fl">
+            <img class="h58" src="img/store_home_icon_3.png">
+            <p class="fz24 lh24 mt20">美妆</p>
+        </div>
+        <div class="w134 tac h100p lh58 pt40 fl">
+            <img class="h58" src="img/store_home_icon_4.png">
+            <p class="fz24 lh24 mt20">服饰</p>
+        </div>
+        <a class="ac333333" href="store_goods_sort.html">
+            <div class="w134 tac h100p lh54 pt40 fl">
+                <img class="h54" src="img/store_home_icon_other.png">
+                <p class="fz24 lh24 mt22">分类</p>
+            </div>
+        </a>
+    </section>
+    <section>
+        <p class="fz42 lh42 mt20 c111111 pl30">店铺优惠券</p>
+        <div class="coupons w750 ofxs no-scrollbar">
+            <ul class="h156 w100p pl28 mt22 " style="width: 1000rem">
+               <li class="cffffff w404 h156 fl mr20 pl36 pt40 pr fl" style="background: url('img/store_home_coupons.png');background-repeat: no-repeat;background-size: 100% 100%;background-position: top left;">
+                    <p class="fz28 lh28">5元店铺优惠券</p>
+                    <p class="fz22 lh22 mt18 op60">无门槛使用</p>
+                    <span class="c333333 fz22 lh22 pa t62 r56">领取</span>
+                </li> 
+
+                <li class="cffffff w404 h156 fl mr20 pl36 pt40 pr fl" style="background: url('img/store_home_coupons.png');background-repeat: no-repeat;background-size: 100% 100%;background-position: top left;">
+                    <p class="fz28 lh28">5元店铺优惠券</p>
+                    <p class="fz22 lh22 mt18 op60">无门槛使用</p>
+                    <span class="c333333 fz22 lh22 pa t62 r56">领取</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="tac fz28 mt62 pb34 lh28">
+        <a class="goods-show-block-btn lastest-btn mr128 ac888888 pr active" href="javascript:void(0);">
+        最新
+            <div class="line h3 w40 bgcffd018 pa b-28 l8 dn"></div>
+        </a>
+        <a class="goods-show-block-btn hottest-btn ac888888 pr" href="javascript:void(0);">最热<div class="line h3 w40 bgcffd018 pa b-28 l8 dn"></div></a>
+    </section>
+    <section class="h1px bgce5e5e5"></section>
+    <section class="h20 bgcf5f5f5"></section>
+    <div class="w100p ofxh pr good-block">
+        <div class="good-block-inner-wrap clearfix ofh" style="width: 200%;">
+            <!-- 最新 -->
+            <section class="lastest w50p fl pt30 pl30 pr30" style="">
+                <article class="mb30 clearfix">
+                    <div class="w200 h200 br10 ofh fl">
+                        <img class="object-fit-cover" src="img/store_home_goods_forexample_2.png">
+                    </div>
+                    <div class="w490 h200 pl30 pt14 fl pr">
+                        <p class="fz24 lh34 mult-line-ellipsis-2">2018新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮</p>
+                        <p class="cfa491d fz24 pa b10">￥2188.80</p>
+                    </div>
+                </article>
+                <article class="mb30 clearfix">
+                    <div class="w200 h200 br10 ofh fl">
+                        <img class="object-fit-cover" src="img/store_home_goods_forexample_2.png">
+                    </div>
+                    <div class="w490 h200 pl30 pt14 fl pr">
+                        <p class="fz24 lh34 mult-line-ellipsis-2">2018新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮</p>
+                        <p class="cfa491d fz24 pa b10">￥2188.80</p>
+                    </div>
+                </article>
+                <article class="mb30 clearfix">
+                    <div class="w200 h200 br10 ofh fl">
+                        <img class="object-fit-cover" src="img/store_home_goods_forexample_2.png">
+                    </div>
+                    <div class="w490 h200 pl30 pt14 fl pr">
+                        <p class="fz24 lh34 mult-line-ellipsis-2">2018新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮</p>
+                        <p class="cfa491d fz24 pa b10">￥2188.80</p>
+                    </div>
+                </article>
+            </section>
+            <!-- 最热 -->
+            <section class="hottest w50p fl pt30 pl30 pr30" style="">
+                <article class="mb30 clearfix">
+                    <div class="w200 h200 br10 ofh fl">
+                        <img class="object-fit-cover" src="img/store_home_goods_forexample_2.png">
+                    </div>
+                    <div class="w490 h200 pl30 pt14 fl pr">
+                        <p class="fz24 lh34 mult-line-ellipsis-2">2018新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮</p>
+                        <p class="cfa491d fz24 pa b10">￥2188.80</p>
+                    </div>
+                </article>
+                <article class="mb30 clearfix">
+                    <div class="w200 h200 br10 ofh fl">
+                        <img class="object-fit-cover" src="img/store_home_goods_forexample_2.png">
+                    </div>
+                    <div class="w490 h200 pl30 pt14 fl pr">
+                        <p class="fz24 lh34 mult-line-ellipsis-2">2018新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮</p>
+                        <p class="cfa491d fz24 pa b10">￥2188.80</p>
+                    </div>
+                </article>
+                <article class="mb30 clearfix">
+                    <div class="w200 h200 br10 ofh fl">
+                        <img class="object-fit-cover" src="img/store_home_goods_forexample_2.png">
+                    </div>
+                    <div class="w490 h200 pl30 pt14 fl pr">
+                        <p class="fz24 lh34 mult-line-ellipsis-2">2018新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮</p>
+                        <p class="cfa491d fz24 pa b10">￥2188.80</p>
+                    </div>
+                </article>
+                <article class="mb30 clearfix">
+                    <div class="w200 h200 br10 ofh fl">
+                        <img class="object-fit-cover" src="img/store_home_goods_forexample_2.png">
+                    </div>
+                    <div class="w490 h200 pl30 pt14 fl pr">
+                        <p class="fz24 lh34 mult-line-ellipsis-2">2018新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮新款夏季宽松短袖女韩范港味白色印花上衣服复古t恤潮</p>
+                        <p class="cfa491d fz24 pa b10">￥2188.80</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/util.js"></script>
+<script type="text/javascript" src="dist/swipeslider.js"></script>
+<script src="js/store_home.js"></script>
+</html>

@@ -1,0 +1,99 @@
+body {
+    letter-spacing: (1rem / 75);
+}
+.sec-succeed-header {
+    padding-top: (171rem / 75);
+    height: (369rem / 75);
+    position: relative;
+    color: #fff;
+    .ok {
+        position: absolute;
+        top: (76rem / 75);
+        right: (50rem / 75);
+
+        font-size: (32rem / 75);
+
+        color: #fff;
+    }
+    .succeed-logo {
+        text-align: center;
+        img {
+            width: (106rem / 75);
+        }
+
+        p {
+            margin-top: (16rem / 75);
+
+            font-size: (36rem / 75);
+        }
+    }
+
+    .succeed-header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 10rem;
+    }
+}
+
+
+
+.sec-pay-info {
+    overflow: hidden;
+
+    -moz-border-radius-topleft: (20rem / 75);
+
+         border-top-left-radius: (20rem / 75);
+    -moz-border-radius-topright: (20rem / 75);
+         border-top-right-radius: (20rem / 75);
+
+    background-color: #f5f5f5;
+    article {
+        margin-bottom: (10rem / 75);
+        padding-right: (30rem / 75);
+        padding-left: (30rem / 75);
+
+        background-color: #fff;
+
+        li {
+            height: (100rem / 75);
+
+            line-height: (100rem / 75);
+            &:not(:nth-last-of-type(1)) {
+                border-bottom: 1px solid #f5f5f5;
+            }
+        }
+    }
+
+    .info-title {
+        float: left;
+
+        font-size: (28rem / 75);
+    }
+
+    .info-content {
+        float: right;
+
+        font-size: (28rem / 75);
+
+        letter-spacing: (1rem / 75);
+    }
+
+    .info-price {
+        .info-content.in-price {
+            color: #f83535;
+        }
+    }
+}
+
+.sec-ad {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: (20rem / 75);
+    padding-bottom: (30rem / 75);
+    img {
+        width: (690rem / 75);
+    }
+}

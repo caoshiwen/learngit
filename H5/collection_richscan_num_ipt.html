@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>信用卡</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("img/collection_bg.png");
+            background-repeat: no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+            background-position: top left;
+        }
+        .btn-sure.gray { 
+            background: none;
+            background-color: #cccccc !important;
+            color:#888888 !important;
+            pointer-events: none;
+         }
+         .btn-sure {
+            width: calc(100% - (80rem / 75));
+         }
+    </style>
+</head>
+<body>
+    <header class="common-header pr" style="background: none;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller.png"></a>
+        <h2 class="title">收款码</h2>
+        <a class="right-word acffffff pa fz32 lh32 t72 r46" href="javascript:void(0);">设置金额</a>
+        <a class="right-word-clear-num acffffff pa fz32 lh32 t72 r46 dn" href="javascript:void(0);">清除金额</a>
+    </header>
+    <section class="mt10 ml30 w690 br10 bgcffffff pt84 pb44 pl170 pr170">
+        <img class="w350" src="img/2dcode_forexample.png">
+        <p class="p-num-show mt40 tac fz56 lh56"></p>
+    </section>
+    <p class="tip mt50 tac cffffff fz22 lh22">无需加好友，扫一扫向我付款</p>
+
+
+    <section class="sec-set-num pf t0 l0 zi10 w100p h100p dn">
+        <article class="art-set-num-bg pa t0 l0 w100p h100p bgc000000 op50"></article>
+        <article class="pa t180 l74 h460 w600 bgcffffff br10 ofh">
+            <div class="h20 w600 bgc01a7ff"></div>
+            <h2 class="h100 w600 lh100 tac fz30 ">设置金额</h2>
+            <div class="h2 w600 bgce5e5e5"></div>
+            <div class="h90 lh90 fz32 pl40">
+                金额
+                <input class="fz32 bn ipt-no-outline w440" id="ipt-num" type="tel" onkeyup="onlyNumber(this)" value="">
+            </div>
+            <div class="ml40 h2 w520 bgce5e5e5"></div>
+            <div class="h90 pl40 lh90 fz32 w520">
+                <input class="fz32 bn ipt-no-outline" type="text" placeholder="收款说明 (可选填)" size="16" maxlength="20">
+            </div>
+            <div class="h2 w600 bgce5e5e5"></div>
+            <!-- <div> -->
+                <a class="btn-sure blue-bg-button gray br10 ml40 h88 lh80 mt28 fz32" href="javascript:void(0);">确定</a>
+            <!-- </div> -->
+        </article>
+    </section>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/collection_richscan_num_ipt.js"></script>
+<script src="js/change_font_size.js"></script>
+
+</html>
